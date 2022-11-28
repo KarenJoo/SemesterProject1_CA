@@ -10,18 +10,39 @@ body {
   margin: auto;
 }
 
+header {
+  position: relative;
+}
+
+nav {
+  position: absolute;
+}
+
+
+
+:root {
+  --red: #ac441d;
+  --beige: #e3d3b3;
+  --grey: #333538;
+}
+
 /*links in nav*/
 header a {
   text-decoration: none;
-  color: #E3D3B3;
+  color: var(--beige);
 }
 
 nav a:hover {
-  color: #AC441D;
+  color: var(--red);
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
 }
 
 .active {
-color: #AC441D;
+  color: var(--red);
 }
 
 /*home page*/
@@ -43,6 +64,45 @@ color: #AC441D;
 /*MOBILE SCREEN*/
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
+  /*navigation menu*/
+
+  nav,
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    display: block;
+    padding: 20px 40px;
+  }
+
+  .burger-icon {
+    padding: 40px;
+  }
+
+  .menu-line {
+    width: 25px;
+    height: 2px;
+    background-color: var(--beige);
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  /*vertical menu */
+
+.nav-small {
+  position: fixed;
+background: #333538f9;
+font-size: 15px;
+}
+
+ nav a {
+  display: block;
+    padding: 10px; 
+  }
+
+  /*home page*/
+
   .hero-container-small {
     min-height: 700px;
     background-position: 50%;
@@ -57,6 +117,8 @@ color: #AC441D;
 
 /*DESKTOP*/
 @media (min-width: 600px) {
+  /*navigation menu*/
+
   .hero-content-big {
     height: 700px;
     margin: 0 auto;
