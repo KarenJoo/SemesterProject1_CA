@@ -5,7 +5,10 @@
 
 header {
   background: var(--grey);
+  display: flex;
+  flex-direction: row;
 }
+
 body {
   font-family: "inter", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #333538;
@@ -15,6 +18,19 @@ body {
 
 nav {
   position: absolute;
+  background: var(--grey);
+  width: 100%;
+}
+
+.logo {
+  background-image: url("../icons/LOGO.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px auto;
+  justify-content: center;
+  align-items: center;
+  height: 80px;
+  width: 130px;
 }
 
 :root {
@@ -74,7 +90,7 @@ ul {
   }
 
   .burger-icon {
-    padding: 10px 10px 20px 10px;
+    padding: 50px 0px 0px 10px;
   }
 
   .menu-line {
@@ -88,9 +104,11 @@ ul {
   /*vertical menu */
 
   .nav-small {
-    position: fixed;
+    position: absolute;
     background: #333538f9;
     font-size: 15px;
+    margin: 100px 0px;
+    max-width: 130px;
   }
 
   nav a {
@@ -117,7 +135,6 @@ ul {
   /*navigation menu*/
 
   #menu-checkbox,
-  #burger-icon,
   .menu-line {
     display: none;
   }
