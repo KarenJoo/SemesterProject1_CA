@@ -3,6 +3,9 @@
   src: url("../Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
+header {
+  background: var(--grey);
+}
 body {
   font-family: "inter", Verdana, Geneva, Tahoma, sans-serif;
   background-color: #333538;
@@ -10,15 +13,9 @@ body {
   margin: auto;
 }
 
-header {
-  position: relative;
-}
-
 nav {
   position: absolute;
 }
-
-
 
 :root {
   --red: #ac441d;
@@ -77,7 +74,7 @@ ul {
   }
 
   .burger-icon {
-    padding: 40px;
+    padding: 10px 10px 20px 10px;
   }
 
   .menu-line {
@@ -90,15 +87,15 @@ ul {
 
   /*vertical menu */
 
-.nav-small {
-  position: fixed;
-background: #333538f9;
-font-size: 15px;
-}
+  .nav-small {
+    position: fixed;
+    background: #333538f9;
+    font-size: 15px;
+  }
 
- nav a {
-  display: block;
-    padding: 10px; 
+  nav a {
+    display: block;
+    padding: 10px;
   }
 
   /*home page*/
@@ -118,6 +115,25 @@ font-size: 15px;
 /*DESKTOP*/
 @media (min-width: 600px) {
   /*navigation menu*/
+
+  #menu-checkbox,
+  #burger-icon,
+  .menu-line {
+    display: none;
+  }
+
+  nav {
+    display: block;
+    position: fixed;
+  }
+
+  .burger-icon {
+    display: none;
+  }
+
+  nav a {
+    display: inline-block;
+  }
 
   .hero-content-big {
     height: 700px;
