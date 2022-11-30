@@ -30,6 +30,10 @@ nav {
   margin: 50px auto;
 }
 
+p {
+  margin-bottom: 0px;
+}
+
 :root {
   --red: #ac441d;
   --beige: #e3d3b3;
@@ -71,7 +75,7 @@ ul {
   text-align: center;
 }
 
-.info-container {
+.gray-container {
   color: var(--beige);
   box-sizing: border-box;
   display: flex;
@@ -79,10 +83,29 @@ ul {
   text-align: center;
   justify-content: center;
   max-width: 100%;
-  margin-top: 40px;
-  margin-bottom: 40px;
+  margin: 40px 20px;
 }
 
+.info-container {
+  box-sizing: border-box;
+  background-color: var(--beige);
+  color: var(--grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.hours {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 30px auto;
+}
+
+.ticket,
+.adress {
+  margin: 50px auto;
+  text-align: center;
+}
 /*MOBILE SCREEN*/
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
@@ -187,5 +210,22 @@ ul {
     height: 700px;
     margin: 0 auto;
     font-size: 30px;
+  }
+
+  .info-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 40px 20px 40px 20px;
+  }
+
+  .adress {
+    max-width: 30%;
+  }
+
+  .ticket {
+    margin-top: 10%;
   }
 }
