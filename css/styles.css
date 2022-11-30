@@ -3,6 +3,12 @@
   src: url("../Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
+:root {
+  --red: #ac441d;
+  --beige: #e3d3b3;
+  --grey: #333538;
+  --blue: #5f7b89;
+}
 .big-logo,
 .small-logo,
 .logo {
@@ -16,9 +22,8 @@
 
 body {
   font-family: "inter", Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #333538;
-  color: #ffff;
-  margin: auto;
+  background-color: var(--grey);
+  margin: 0px;
 }
 
 nav {
@@ -36,12 +41,6 @@ h1 {
 
 p {
   margin-bottom: 0px;
-}
-
-:root {
-  --red: #ac441d;
-  --beige: #e3d3b3;
-  --grey: #333538;
 }
 
 /*links in nav*/
@@ -88,7 +87,7 @@ ul {
   text-align: center;
   justify-content: center;
   max-width: 100%;
-  height: auto;
+  max-height: 1000px;
   margin: 40px 20px;
 }
 
@@ -100,18 +99,23 @@ ul {
   flex-direction: column;
 }
 
-.hours {
+.clock {
   display: flex;
   flex-direction: column;
   text-align: left;
   margin: 30px auto;
 }
-.hours img {
+
+.clock img {
+  height: 50px;
+}
+
+.location img {
   height: 50px;
   margin: 0px auto;
 }
 
-.adress {
+.location {
   margin: 25px auto;
   text-align: center;
 }
@@ -125,8 +129,32 @@ ul {
   height: 60px;
 }
 
-.adress img {
-  height: 60px;
+/*homepage - event containers*/
+.title-events h1 {
+  font-size: 50px;
+  background: var(--blue);
+  color: var(--beige);
+  padding: 20px;
+}
+
+.events {
+  background-color: var(--beige);
+  color: var(--grey);
+  padding: 10px;
+  max-height: 350px;
+}
+
+.events h2 {
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.small-news-image,
+.big-news-image,
+.news-image {
+  background-image: url("../images/professora.webp");
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 
 /*MOBILE SCREEN*/
@@ -194,6 +222,19 @@ ul {
     margin: 0px auto;
     padding-top: 70px;
   }
+
+  .news-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .small-news-image {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    min-height: 12em;
+    min-width: 15em;
+  }
 }
 
 /*DESKTOP*/
@@ -244,7 +285,23 @@ ul {
     padding: 40px 20px 40px 20px;
   }
 
-  .adress {
+  .location {
     max-width: 30%;
+  }
+
+  /*home-page events container*/
+
+  .big-news-container {
+    display: flex;
+    max-width: 90%;
+    font-size: 20px;
+  }
+
+  .big-news-image {
+    box-sizing: border-box;
+    max-width: 40%;
+    margin-top: 0px;
+    min-height: 12em;
+    min-width: 15em;
   }
 }
