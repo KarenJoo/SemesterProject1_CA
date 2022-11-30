@@ -57,7 +57,7 @@ ul {
 
 /*home page*/
 .hero-container {
-  background-image: url("../images/red-boy.jpg");
+  background-image: url("../images/red-boy-1.webp");
   background-size: cover;
   background-repeat: no-repeat;
   height: 1000px;
@@ -69,6 +69,18 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+.info-container {
+  color: var(--beige);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 /*MOBILE SCREEN*/
