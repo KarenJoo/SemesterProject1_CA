@@ -143,6 +143,7 @@ ul {
   background-color: var(--beige);
   padding: 10px;
   max-height: 700px;
+  color: var(--grey);
 }
 
 .events h2 {
@@ -174,26 +175,11 @@ ul {
   font-size: 25px;
 }
 
-.exhibition-container,
-.explore-container {
-  background-color: var(--blue);
+.big-explore-image {
+  background-image: url("../images/painting-vr.webp");
 }
 
-.big-exhibition-image,
-.exhibition-image,
-.big-explore-image{
-  margin: 0px;
-  height: 700px;
-  width: 100%;
-}
-
-.big-explore-image,
-.explore-image{
-background-image: url("../images/painting-vr.webp");
-}
-
-.big-exhibition-image,
-.exhibition-image {
+.big-exhibition-image {
   background-image: url("../images/astronaut_test.webp");
   background-repeat: no-repeat;
 }
@@ -275,15 +261,6 @@ background-image: url("../images/painting-vr.webp");
     margin: 20px auto;
     min-height: 15em;
     min-width: 15em;
-  }
-
-  .explore-image {
-   max-height: 50px;
-  max-width: 50px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-image: url("");
-
   }
 }
 
@@ -380,11 +357,18 @@ background-image: url("../images/painting-vr.webp");
     width: 15em;
   }
 
+  .big-exhibition-container,
+  .big-explore-container {
+    background-color: var(--blue);
+  }
+
   .big-exhibition-image,
   .big-explore-image {
-    background-size: cover;
-    max-height: 700px;
-    max-width: 100%;
+    margin: 0px;
+    height: 700px;
+    width: 100%;
     background-position: top 0px right 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
