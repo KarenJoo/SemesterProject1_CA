@@ -141,7 +141,7 @@ ul {
   background-color: var(--beige);
   color: var(--grey);
   padding: 10px;
-  max-height: 350px;
+  max-height: 600px;
 }
 
 .events h2 {
@@ -153,8 +153,9 @@ ul {
 .big-news-image,
 .news-image {
   background-image: url("../images/professora.webp");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
+  border-radius: 50%;
 }
 
 /*MOBILE SCREEN*/
@@ -232,7 +233,7 @@ ul {
     display: flex;
     flex-direction: column;
     margin: 20px auto;
-    min-height: 12em;
+    min-height: 15em;
     min-width: 15em;
   }
 }
@@ -271,9 +272,10 @@ ul {
   }
 
   .hero-content-big {
-    height: 700px;
+    height: 800px;
     margin: 0 auto;
-    font-size: 30px;
+    font-size: 20px;
+    color: #ffff;
   }
 
   .info-container {
@@ -291,6 +293,14 @@ ul {
 
   /*home-page events container*/
 
+  .big-events {
+    max-height: 350px;
+  }
+
+  .big-events h2 {
+    margin: 20px;
+  }
+
   .big-news-container {
     display: flex;
     max-width: 90%;
@@ -300,8 +310,11 @@ ul {
   .big-news-image {
     box-sizing: border-box;
     max-width: 40%;
-    margin-top: 0px;
-    min-height: 12em;
+    min-height: 15em;
     min-width: 15em;
+  }
+
+  .big-news-container p {
+    margin: 0px 20px 0px 20px;
   }
 }
