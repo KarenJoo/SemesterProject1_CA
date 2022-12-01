@@ -77,9 +77,10 @@ ul {
   flex-direction: column;
   text-align: center;
   padding-top: 70px;
+  color: #ffff;
 }
 
-.gray-container {
+.grey-container {
   color: var(--beige);
   box-sizing: border-box;
   display: flex;
@@ -134,12 +135,12 @@ ul {
   font-size: 50px;
   background: var(--blue);
   color: var(--beige);
-  padding: 20px;
+  margin: 0px;
+  padding: 20px 20px 0px;
 }
 
 .events {
   background-color: var(--beige);
-  color: var(--grey);
   padding: 10px;
   max-height: 700px;
 }
@@ -171,6 +172,30 @@ ul {
 .news-container h3 {
   text-align: center;
   font-size: 25px;
+}
+
+.exhibition-container,
+.explore-container {
+  background-color: var(--blue);
+}
+
+.big-exhibition-image,
+.exhibition-image,
+.big-explore-image{
+  margin: 0px;
+  height: 700px;
+  width: 100%;
+}
+
+.big-explore-image,
+.explore-image{
+background-image: url("../images/painting-vr.webp");
+}
+
+.big-exhibition-image,
+.exhibition-image {
+  background-image: url("../images/astronaut_test.webp");
+  background-repeat: no-repeat;
 }
 
 /*MOBILE SCREEN*/
@@ -251,6 +276,15 @@ ul {
     min-height: 15em;
     min-width: 15em;
   }
+
+  .explore-image {
+   max-height: 50px;
+  max-width: 50px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("");
+
+  }
 }
 
 /*DESKTOP*/
@@ -290,7 +324,6 @@ ul {
     height: 800px;
     margin: 0 auto;
     font-size: 20px;
-    color: #ffff;
   }
 
   .info-container {
@@ -343,7 +376,15 @@ ul {
     flex-direction: column;
     margin: 0 auto;
     max-width: 40%;
-    height: 15em;
+    height: 13em;
     width: 15em;
+  }
+
+  .big-exhibition-image,
+  .big-explore-image {
+    background-size: cover;
+    max-height: 700px;
+    max-width: 100%;
+    background-position: top 0px right 75%;
   }
 }
