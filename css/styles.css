@@ -1,0 +1,374 @@
+@font-face {
+  font-family: "inter";
+  src: url("../Roboto/Roboto-Regular.ttf") format("truetype");
+}
+
+:root {
+  --red: #ac441d;
+  --beige: #e3d3b3;
+  --grey: #333538;
+  --blue: #5f7b89;
+}
+.big-logo,
+.small-logo,
+.logo {
+  background-image: url("../icons/LOGO.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 10px auto;
+  height: 80px;
+  width: 130px;
+}
+
+body {
+  font-family: "inter", Verdana, Geneva, Tahoma, sans-serif;
+  background-color: var(--grey);
+  margin: 0px;
+}
+
+nav {
+  position: absolute;
+  background: var(--grey);
+  max-width: 100%;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 50px auto;
+}
+
+h1 {
+  margin-bottom: 0px;
+}
+
+p {
+  margin-bottom: 0px;
+}
+
+/*links in nav*/
+header a {
+  text-decoration: none;
+  color: var(--beige);
+}
+
+nav a:hover {
+  color: var(--red);
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+}
+
+.active {
+  color: var(--red);
+}
+
+/*home page*/
+.hero-container {
+  background-image: url("../images/red-boy-1.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 1200px;
+  max-width: 100%;
+  background-position: bottom 80% right 0px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding-top: 70px;
+  color: #ffff;
+}
+
+.grey-container {
+  color: var(--beige);
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  max-width: 100%;
+  max-height: 1000px;
+  margin: 40px 20px;
+}
+
+.info-container {
+  box-sizing: border-box;
+  background-color: var(--beige);
+  color: var(--grey);
+  display: flex;
+  flex-direction: column;
+}
+
+.clock {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 30px auto;
+}
+
+.clock img {
+  height: 50px;
+}
+
+.location img {
+  height: 50px;
+  margin: 0px auto;
+}
+
+.location {
+  margin: 25px auto;
+  text-align: center;
+}
+
+.ticket {
+  text-align: center;
+  margin: 30px 30px 50px;
+}
+
+.ticket img {
+  height: 60px;
+}
+
+/*homepage - event containers*/
+.title-events h1 {
+  font-size: 50px;
+  background: var(--blue);
+  color: var(--beige);
+  margin: 0px;
+  padding: 20px 20px 0px;
+}
+
+.events {
+  background-color: var(--beige);
+  padding: 10px;
+  max-height: 700px;
+  color: var(--grey);
+}
+
+.events h2 {
+  box-sizing: border-box;
+  display: flex;
+  font-size: 40px;
+  justify-content: center;
+}
+
+.small-news-image,
+.big-news-image,
+.news-image {
+  background-image: url("../images/professora.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.news-container p {
+  display: flex;
+  flex-direction: column;
+  font-size: 20px;
+  margin: 10px;
+  justify-content: center;
+}
+
+.news-container h3 {
+  text-align: center;
+  font-size: 25px;
+}
+
+.big-explore-image {
+  background-image: url("../images/painting-vr.webp");
+}
+
+.big-exhibition-image {
+  background-image: url("../images/astronaut_test.webp");
+  background-repeat: no-repeat;
+}
+
+/*MOBILE SCREEN*/
+
+@media screen and (min-width: 250px) and (max-width: 600px) {
+  /*navigation menu*/
+
+  nav,
+  #menu-checkbox {
+    display: none;
+  }
+
+  #menu-checkbox:checked ~ nav {
+    display: block;
+    padding: 20px 40px;
+  }
+
+  .burger-icon {
+    padding: 50px 0px 0px 10px;
+  }
+
+  .menu-line {
+    width: 25px;
+    height: 2px;
+    background-color: var(--beige);
+    margin-bottom: 4px;
+    display: block;
+  }
+
+  .small-logo {
+    justify-content: center;
+    align-items: center;
+  }
+
+  /*vertical menu */
+
+  header {
+    background: var(--grey);
+    display: flex;
+    flex-direction: row;
+  }
+
+  .nav-small {
+    position: absolute;
+    background: #333538f9;
+    font-size: 15px;
+    margin: 100px 0px;
+    max-width: 190px;
+  }
+
+  nav a {
+    display: block;
+    padding: 10px;
+  }
+
+  /*home page*/
+
+  .hero-container-small {
+    min-height: 700px;
+    background-position: 50%;
+  }
+
+  .hero-content-small {
+    font-size: 15px;
+    margin: 0px auto;
+    padding-top: 70px;
+  }
+
+  .news-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .small-news-image {
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
+    min-height: 15em;
+    min-width: 15em;
+  }
+}
+
+/*DESKTOP*/
+@media (min-width: 600px) {
+  /*navigation menu*/
+
+  #menu-checkbox,
+  .menu-line {
+    display: none;
+  }
+
+  #header-container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+    width: 100%;
+    height: 10px;
+  }
+
+  .big-logo {
+    margin: 10px;
+  }
+
+  /*links*/
+  a {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 0px 10px;
+    max-width: 100%;
+  }
+
+  .burger-icon {
+    display: none;
+  }
+
+  .hero-content-big {
+    height: 800px;
+    margin: 0 auto;
+    font-size: 20px;
+  }
+
+  .info-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 90%;
+    padding: 40px 20px 40px 20px;
+  }
+
+  .location {
+    max-width: 30%;
+  }
+
+  /*home-page events container*/
+
+  .big-events {
+    max-height: 650px;
+  }
+
+  .big-events h2 {
+    margin: 20px;
+    text-align: center;
+    font-size: 60px;
+  }
+
+  .big-news-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    font-size: 20px;
+  }
+
+  .big-news-container p {
+    display: flex;
+    flex-direction: column;
+    margin: 0px 20px 0px 20px;
+  }
+
+  .big-news-container h3,
+  .big-events h2 {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .big-news-image {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width: 40%;
+    height: 13em;
+    width: 15em;
+  }
+
+  .big-exhibition-container,
+  .big-explore-container {
+    background-color: var(--blue);
+  }
+
+  .big-exhibition-image,
+  .big-explore-image {
+    margin: 0px;
+    height: 700px;
+    width: 100%;
+    background-position: top 0px right 75%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

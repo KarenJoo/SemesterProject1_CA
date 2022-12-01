@@ -7,18 +7,25 @@
       name="description"
       content="The home page of Community Science Museum"
     />
-    <link href="/css/index.css" rel="stylesheet" />
+    <link href="/css/styles.css" rel="stylesheet" />
     <title>Community Science Museum | Home page</title>
   </head>
   <body>
-    <header>
-      <nav>
+    <header id="#header-container">        
+      <input type="checkbox" id="menu-checkbox"/>
+      <label for="menu-checkbox" alt="menu checkbox">   
+        <div class="burger-icon">
+          <img src="../icons/burgermenu.png" alt="burgermenu icon">
+        </div>
+      </div>  
+      </label>       
+      <a class="logo small-logo big-logo" href="/index.html"></a>
+      <nav class="nav-small">     
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="explore.html">EXPLORE</a></li>
-          <li><a href="exhibition-spaces.html">EXHIBITION SPACES</a></li>
-          <li><a href="about-us.html">ABOUT US</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
+          <a href="explore.html">EXPLORE</a>
+          <a href="exhibition-spaces.html">EXHIBITION SPACES</a>
+          <a href="about-us.html">ABOUT US</a>
+          <a href="contact.html">CONTACT</a>
         </ul>
       </nav>
     </header>
@@ -32,6 +39,57 @@
           <p>Made for you to explore together!</p>
         </div>
       </section>
+      <section class="grey-container">
+        <h1>HI THERE!</h1>
+        <p>Are you a young person looking to learn more about science?</p> 
+          
+        <p>Our exhibits are designed to be accessible for interested minds, so make sure you come ready to learn and explore!</p>
+      </section>
+      <section class="info-container">
+        <div class="clock">
+          <img src="../icons/clock.svg" alt="clock icon">
+          <p>Monday: Closed</p>
+          <p>Tues-Thurs: 10-16</p>
+          <p>Friday: 10-19</p> 
+          <p>Saturday: 9-16</p>
+          <p>Sunday: 9-13</p>              
+        </div>
+        <div class="location">
+          <img src="../icons/location.svg" alt="location icon">
+          <p>Havnegata 12</p>
+            <p>7010 Trondheim</p>
+          <p>(+47) 999 999 99</p>
+          <p>support@science.museum.com</p>       
+        </div>
+        <div class="ticket">
+          <img src="../icons/ticket.svg" alt="ticket icon">
+          <p>The entrance is free for all!</p>
+        </div>
+      </section>
+      <section class="title-events">
+        <h1>ALL EVENTS// ACTIVITIES// EXHIBITIONS</h1>
+      </section>      
+      <section class="events big-events">
+        <h2>NEWS!</h2>
+        <div class="news-container big-news-container">
+          
+          <p>Visiting Professor of Aeronautics
+            It is our pleasure to announce that Prof Sheila Widnall from the Massachusetts Institute of Technology will be delivering 3 lectures on the development of aeronautics and where the future lies in this exciting ‘space’.</p>
+            
+            <h3>Saturday May 26th  2023</h3>
+            <div class="news-image big-news-image small-news-image"></div>
+        </div>
+      </section>
+      <section class="title-events">
+        <h1>EXPLORE</h1>
+        <section class="explore-container big-explore-container">
+      <a href="../explore.html" class="explore-image big-explore-image"></a>
+      </section>
+      <section class="title-events">
+        <h1>EXHIBITION SPACES</h1>
+        <section class="exhibition-container big-exhibition-container">
+      <a href="exhibition-spaces.html" class="exhibition-image big-exhibition-image">
+        </section></a>
     </main>
     <footer></footer>
   </body>
