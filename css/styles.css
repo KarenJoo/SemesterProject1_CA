@@ -174,14 +174,19 @@ ul {
   font-size: 25px;
 }
 
-
-.big-explore-image {
-  background-image: url("../images/painting-vr.webp");
+#main-footer {
+  background-color: var(--grey);
+  color: #fff;
+  height: 150px;
+  max-width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 30px;
 }
 
-.big-exhibition-image {
-  background-image: url("../images/astronaut_test.webp");
-  background-repeat: no-repeat;
+#main-footer h3 {
+  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 /*MOBILE SCREEN*/
@@ -270,11 +275,11 @@ ul {
     background-size: cover;
     display: flex;
     height: 300px;
-    max-width: 100%; 
+    max-width: 100%;
   }
 
   .exhibition-image {
-background-image: url("../images/astronaut_test.webp");
+    background-image: url("../images/astronaut_test.webp");
   }
 }
 
@@ -372,18 +377,18 @@ background-image: url("../images/astronaut_test.webp");
     width: 15em;
   }
 
-  .big-exhibition-container,
-  .big-explore-container {
-    background-color: var(--blue);
-  }
-
   .big-exhibition-image,
   .big-explore-image {
+    background-image: url("../images/painting-vr.webp");
     margin: 0px;
     height: 550px;
     width: 100%;
     background-position: top 0px right 75%;
     background-repeat: no-repeat;
     background-size: cover;
+  }
+
+  .big-exhibition-image {
+    background-image: url("../images/astronaut_test.webp");
   }
 }
