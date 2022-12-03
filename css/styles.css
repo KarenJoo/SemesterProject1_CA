@@ -218,11 +218,15 @@ ul {
   background-color: #fff;
   padding: 30px;
   margin: 0 10px auto;
+  height: 900px;
 }
 
 .teachers-image,
 .kids-image {
-  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-height: 500px;
   max-width: 100%;
 }
 
@@ -507,10 +511,9 @@ ul {
   /*explore page*/
 
   .big-explore-container {
-    display: flex;
-    flex-direction: row;
-    max-height: auto;
-    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .big-teachers {
@@ -521,11 +524,14 @@ ul {
     box-sizing: border-box;
     max-width: 100%;
   }
+  .big-kids-content,
   .big-teachers-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
     height: 350px;
-  }
-  .big-kids-content {
-    max-height: 600px;
-    max-width: 100%;
   }
 }
