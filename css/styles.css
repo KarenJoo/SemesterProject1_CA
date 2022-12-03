@@ -213,9 +213,6 @@ ul {
   max-width: 100%;
 }
 
-
-
-
 .teachers,
 .kids {
   background-color: #fff;
@@ -353,20 +350,20 @@ ul {
     max-width: 450px;
     margin: 0 auto;
   }
- 
+
   .kids-content {
     height: 380px;
     max-width: 100%;
   }
 
- .teachers-content{
-  height: 50px;
- }
+  .teachers-content {
+    height: 50px;
+  }
 
-.teachers-content {
-  height: 300px;
-  max-width: 100%;
-}
+  .teachers-content {
+    height: 300px;
+    max-width: 100%;
+  }
 }
 
 /*DESKTOP*/
@@ -516,7 +513,6 @@ ul {
     max-width: 100%;
   }
 
-
   .big-teachers {
     box-sizing: border-box;
     max-width: 100%;
@@ -525,7 +521,7 @@ ul {
     box-sizing: border-box;
     max-width: 100%;
   }
-  .big-teachers-content{
+  .big-teachers-content {
     height: 350px;
   }
   .big-kids-content {
