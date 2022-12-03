@@ -152,7 +152,7 @@ ul {
 .big-explore,
 .title-events h1 {
   color: var(--beige);
-  padding: 20px 20px 20px;
+  padding: 130px 20px 10px;
 }
 
 .news-container {
@@ -202,15 +202,41 @@ ul {
 }
 
 #main-footer h3 {
-  margin-bottom: 30px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 /*Explore page*/
 
-.kids-container {
+#explore-container {
+  display: flex;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+
+
+
+.teachers,
+.kids {
   background-color: #fff;
   padding: 30px;
+  margin: 0 10px auto;
+}
+
+.teachers-image,
+.kids-image {
+  height: auto;
+  max-width: 100%;
+}
+
+.explore-contact {
+  text-align: center;
+}
+
+.explore-cta {
+  color: var(--beige);
+  font-size: 30px;
+  text-decoration: none;
 }
 
 /*MOBILE SCREEN*/
@@ -255,7 +281,7 @@ ul {
 
   .nav-small {
     position: absolute;
-    background: #333538f9;
+    background: var(--grey);
     font-size: 15px;
     margin: 100px 0px;
     max-width: 190px;
@@ -313,6 +339,34 @@ ul {
   .exhibition-image {
     background-image: url("../images/astronaut_test.webp");
   }
+
+  /*explore page*/
+  .small-explore-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .small-teachers,
+  .small-kids {
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    margin: 0 auto;
+  }
+ 
+  .kids-content {
+    height: 380px;
+    max-width: 100%;
+  }
+
+ .teachers-content{
+  height: 50px;
+ }
+
+.teachers-content {
+  height: 300px;
+  max-width: 100%;
+}
 }
 
 /*DESKTOP*/
@@ -451,5 +505,31 @@ ul {
 
   .big-exhibition-image {
     background-image: url("../images/astronaut_test.webp");
+  }
+
+  /*explore page*/
+
+  .big-explore-container {
+    display: flex;
+    flex-direction: row;
+    max-height: auto;
+    max-width: 100%;
+  }
+
+
+  .big-teachers {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .big-kids {
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .big-teachers-content{
+    height: 350px;
+  }
+  .big-kids-content {
+    max-height: 600px;
+    max-width: 100%;
   }
 }
