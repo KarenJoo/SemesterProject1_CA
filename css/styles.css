@@ -22,21 +22,33 @@
 
 body {
   font-family: "inter", Verdana, Geneva, Tahoma, sans-serif;
-  background-color: var(--grey);
+  background-color: var(--blue);
   margin: 0px;
 }
 
 nav {
   position: absolute;
-  background: var(--grey);
+  background-color: var(--grey);
   max-width: 100%;
   display: inline-block;
   box-sizing: border-box;
   margin: 50px auto;
 }
 
+header {
+  position: fixed;
+  background-color: var(--grey);
+  height: 110px;
+  width: 100%;
+}
+
 h1 {
-  margin-bottom: 0px;
+  font-size: 40px;
+  color: var(--beige);
+  margin: 0px;
+  padding-top: 30px;
+  padding-left: 0px;
+  text-align: center;
 }
 
 p {
@@ -47,6 +59,7 @@ p {
 header a {
   text-decoration: none;
   color: var(--beige);
+  background: var(--grey);
 }
 
 nav a:hover {
@@ -56,6 +69,7 @@ nav a:hover {
 ul {
   list-style: none;
   padding: 0px;
+  background: var(--grey);
 }
 
 .active {
@@ -76,8 +90,11 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  padding-top: 70px;
   color: #ffff;
+}
+
+.hero-content h2 {
+  margin-top: 100px;
 }
 
 .grey-container {
@@ -88,7 +105,6 @@ ul {
   text-align: center;
   justify-content: center;
   max-width: 100%;
-  max-height: 1000px;
   margin: 40px 20px;
 }
 
@@ -131,22 +147,22 @@ ul {
 }
 
 /*homepage - event containers*/
+
+.big-exhibition,
+.big-explore,
 .title-events h1 {
-  font-size: 50px;
-  background: var(--blue);
   color: var(--beige);
-  margin: 0px;
-  padding: 20px 20px 0px;
+  padding: 20px 20px 20px;
 }
 
-.events {
+.news-container {
   background-color: var(--beige);
   padding: 10px;
   max-height: 700px;
   color: var(--grey);
 }
 
-.events h2 {
+.news-container h2 {
   box-sizing: border-box;
   display: flex;
   font-size: 40px;
@@ -162,7 +178,7 @@ ul {
   border-radius: 50%;
 }
 
-.news-container p {
+.news p {
   display: flex;
   flex-direction: column;
   font-size: 20px;
@@ -170,18 +186,31 @@ ul {
   justify-content: center;
 }
 
-.news-container h3 {
+.news h3 {
   text-align: center;
   font-size: 25px;
 }
 
-.big-explore-image {
-  background-image: url("../images/painting-vr.webp");
+#main-footer {
+  background-color: var(--grey);
+  color: #fff;
+  height: 200px;
+  max-width: 100%;
+  text-align: center;
+  font-size: 12px;
+  margin-top: 30px;
 }
 
-.big-exhibition-image {
-  background-image: url("../images/astronaut_test.webp");
-  background-repeat: no-repeat;
+#main-footer h3 {
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+/*Explore page*/
+
+.kids-container {
+  background-color: #fff;
+  padding: 30px;
 }
 
 /*MOBILE SCREEN*/
@@ -259,8 +288,30 @@ ul {
     display: flex;
     flex-direction: column;
     margin: 20px auto;
-    min-height: 15em;
-    min-width: 15em;
+    height: 16em;
+    width: 16em;
+    background-position: top 20% left 0%;
+    border-radius: 50%;
+  }
+
+  .exhibition,
+  .explore {
+    font-size: 20px;
+    margin: 0px;
+  }
+
+  .exhibition-image,
+  .explore-image {
+    background-image: url("../images/painting-vr.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    height: 300px;
+    max-width: 100%;
+  }
+
+  .exhibition-image {
+    background-image: url("../images/astronaut_test.webp");
   }
 }
 
@@ -303,12 +354,17 @@ ul {
     font-size: 20px;
   }
 
+  .hero-content-big h2 {
+    margin-top: 200px;
+  }
+
   .info-container {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
+    margin: 0 auto 20px;
     max-width: 90%;
+    max-height: 400px;
     padding: 40px 20px 40px 20px;
   }
 
@@ -318,30 +374,20 @@ ul {
 
   /*home-page events container*/
 
-  .big-events {
-    max-height: 650px;
-  }
-
-  .big-events h2 {
-    margin: 20px;
-    text-align: center;
-    font-size: 60px;
-  }
-
-  .big-news-container {
+  .big-news {
     display: flex;
     flex-direction: column;
     max-width: 100%;
     font-size: 20px;
   }
 
-  .big-news-container p {
+  .big-news p {
     display: flex;
     flex-direction: column;
     margin: 0px 20px 0px 20px;
   }
 
-  .big-news-container h3,
+  .big-news h3,
   .big-events h2 {
     display: flex;
     flex-direction: column;
@@ -357,18 +403,53 @@ ul {
     width: 15em;
   }
 
-  .big-exhibition-container,
-  .big-explore-container {
-    background-color: var(--blue);
+  #explore-ex-container {
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    max-width: 100%;
+  }
+
+  .big-explore h1,
+  .big-exhibition h1 {
+    font-size: 25px;
+  }
+
+  .explore {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0px;
+    flex: 1;
+  }
+
+  .exhbition {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    margin: 0px;
+    flex: 2;
+  }
+
+  .exhibition h1,
+  .explore h1 {
+    flex-direction: row;
   }
 
   .big-exhibition-image,
   .big-explore-image {
-    margin: 0px;
-    height: 700px;
+    background-image: url("../images/painting-vr.webp");
+    display: flex;
+    flex-direction: row;
+    height: 450px;
     width: 100%;
-    background-position: top 0px right 75%;
+    background-position: top 0px right 35%;
     background-repeat: no-repeat;
     background-size: cover;
+    margin: 0px;
+  }
+
+  .big-exhibition-image {
+    background-image: url("../images/astronaut_test.webp");
   }
 }
