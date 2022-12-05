@@ -240,6 +240,23 @@ ul {
   text-decoration: none;
 }
 
+/*exhibition page*/
+
+.exhibition-links {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ex-cta-small,
+.exhibition-cta {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  border-style: solid;
+}
+
 /*MOBILE SCREEN*/
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
@@ -367,6 +384,15 @@ ul {
   .teachers-content {
     height: 300px;
     max-width: 100%;
+  }
+
+  /*Exhibition spaces page*/
+
+  .ex-cta-small {
+    display: flex;
+    padding: 0px 7px;
+    font-size: 10px;
+    margin: 0 auto;
   }
 }
 
@@ -533,5 +559,20 @@ ul {
     margin: 0 auto;
     max-width: 400px;
     height: 350px;
+  }
+
+  /*Exhibition spaces*/
+
+  .ex-cta-big {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+  .ex-cta-big:hover {
+    color: var(--red);
+    font-size: 12px;
   }
 }
