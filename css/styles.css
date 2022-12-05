@@ -8,6 +8,7 @@
   --beige: #e3d3b3;
   --grey: #333538;
   --blue: #5f7b89;
+  --white: #fff;
 }
 .big-logo,
 .small-logo,
@@ -215,7 +216,7 @@ ul {
 
 .teachers,
 .kids {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 30px;
   margin: 0 10px auto;
   height: 900px;
@@ -255,6 +256,59 @@ ul {
   font-size: 12px;
   text-decoration: none;
   border-style: solid;
+}
+
+#ex-container {
+  box-sizing: border-box;
+}
+
+/* text over image learned from: https://css-tricks.com/text-blocks-over-image/b*/
+.robotics,
+.evolution,
+.cosmology {
+  box-sizing: border-box;
+  margin-top: 20px;
+  position: relative;
+  background-color: var(--white);
+  max-width: 100%;
+  margin-top: 0px;
+}
+
+.cosmology {
+  margin-top: 20px;
+}
+
+.robotics img,
+.evolution img,
+.cosmology img {
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.robotics h2,
+.evolution h2,
+.cosmology h2 {
+  box-sizing: border-box;
+  position: absolute;
+  font-size: 30px;
+  top: 170px;
+  left: 10px;
+  color: var(--white);
+  max-width: 100%;
+}
+
+.robotics-text,
+.evolution-text,
+.cosmology-text {
+  font-size: 15px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.robotics h2,
+.evolution h2 {
+  top: 390px;
 }
 
 /*MOBILE SCREEN*/
@@ -393,6 +447,11 @@ ul {
     padding: 0px 7px;
     font-size: 10px;
     margin: 0 auto;
+  }
+
+  .ex-cta-small:hover {
+    color: var(--red);
+    font-size: 8px;
   }
 }
 
@@ -573,6 +632,6 @@ ul {
 
   .ex-cta-big:hover {
     color: var(--red);
-    font-size: 12px;
+    font-size: 13px;
   }
 }
