@@ -626,6 +626,12 @@ ul {
 
   /*Exhibition spaces*/
 
+  .exhibition-links,
+  .exhibition-cta,
+  .ex-cta-small {
+    display: none;
+  }
+
   .ex-cta-big {
     display: flex;
     flex-direction: column;
