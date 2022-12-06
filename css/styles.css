@@ -264,25 +264,13 @@ ul {
 #robotics,
 #evolution,
 #cosmology {
-  margin-top: 20px;
   background-color: var(--white);
-}
-
-#cosmology {
-  margin-top: 30px;
-}
-
-#robotics img,
-#evolution img,
-#cosmology img {
-  width: 100%;
-  max-height: auto;
-  margin: 0 auto;
 }
 
 #robotics h2,
 #evolution h2,
 #cosmology h2 {
+  box-sizing: border-box;
   font-size: 30px;
   margin-top: 5px;
   left: 10px;
@@ -293,6 +281,7 @@ ul {
 .robotics-text,
 .evolution-text,
 .cosmology-text {
+  box-sizing: border-box;
   font-size: 15px;
   padding: 20px;
   max-width: 100%;
@@ -456,6 +445,21 @@ ul {
   .small-evolution {
     max-width: 450px;
     margin: 0px auto;
+  }
+
+  .small-cosmology {
+    margin-top: 30px;
+  }
+
+  .small-cosmology img,
+  .small-evolution img,
+  .small-robotics img {
+    max-width: 100%;
+  }
+
+  .small-cosmology img {
+    height: 400px;
+    object-fit: cover;
   }
 }
 
@@ -659,5 +663,17 @@ ul {
     flex-direction: column;
     max-width: 30%;
     margin: 0 auto;
+  }
+
+  .big-evolution img,
+  .big-cosmology img,
+  .big-robotics img {
+    max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+  }
+
+  .big-cosmology img {
+    object-position: top left 0px;
   }
 }
