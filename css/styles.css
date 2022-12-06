@@ -258,46 +258,33 @@ ul {
   border-style: solid;
 }
 
-.ex-container {
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  min-width: 280px;
-  max-width: 950px;
-
-  margin: 0 auto;
-}
-
+.big-cosmology,
+.big-evolution,
+.big-robotics,
 #robotics,
 #evolution,
 #cosmology {
-  display: block;
-  box-sizing: border-box;
   margin-top: 20px;
   background-color: var(--white);
-  max-width: 450px;
-  margin: 0px auto;
 }
 
 #cosmology {
   margin-top: 30px;
 }
 
-
 #robotics img,
 #evolution img,
 #cosmology img {
-  max-width: 100%;
+  width: 100%;
   max-height: auto;
   margin: 0 auto;
 }
 
-
 #robotics h2,
 #evolution h2,
 #cosmology h2 {
-font-size: 30px;
-  top: 170px;
+  font-size: 30px;
+  margin-top: 5px;
   left: 10px;
   color: var(--blue);
   max-width: 100%;
@@ -310,11 +297,6 @@ font-size: 30px;
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
-}
-
-.robotics h2,
-.evolution h2 {
-  top: 390px;
 }
 
 /*MOBILE SCREEN*/
@@ -458,6 +440,22 @@ font-size: 30px;
   .ex-cta-small:hover {
     color: var(--red);
     font-size: 8px;
+  }
+
+  .ex-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .small-robotics,
+  .small-cosmology,
+  .small-evolution {
+    max-width: 450px;
+    margin: 0px auto;
   }
 }
 
@@ -642,36 +640,18 @@ font-size: 30px;
   }
 
   .big-ex-container {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    box-sizing: border-box;
+    padding: 20px;
   }
 
+  .big-evolution,
+  .big-robotics,
   .big-cosmology {
     display: flex;
     flex-direction: column;
-  }
-
-  .big-cosmology-text p {
-    display: flex;
-    flex-direction: column;
-    background-color: var(--white);
-  }
-
-  .big-evolution {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .big-evolution {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .big-evolution img,
-  .big-robotics img,
-  .big-cosmology img {
-    max-width: 100%;
-    max-height: 450px;
+    max-width: 30%;
+    margin: 0 auto;
   }
 }
