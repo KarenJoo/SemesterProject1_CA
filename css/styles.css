@@ -8,6 +8,7 @@
   --beige: #e3d3b3;
   --grey: #333538;
   --blue: #5f7b89;
+  --white: #fff;
 }
 .big-logo,
 .small-logo,
@@ -215,14 +216,18 @@ ul {
 
 .teachers,
 .kids {
-  background-color: #fff;
+  background-color: var(--white);
   padding: 30px;
   margin: 0 10px auto;
+  height: 900px;
 }
 
 .teachers-image,
 .kids-image {
-  height: auto;
+  display: flex;
+  box-sizing: border-box;
+  margin: 0 auto;
+  max-height: 500px;
   max-width: 100%;
 }
 
@@ -234,6 +239,52 @@ ul {
   color: var(--beige);
   font-size: 30px;
   text-decoration: none;
+}
+
+/*exhibition page*/
+
+#exhibition-links {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.ex-cta-small,
+.exhibition-cta {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  border-style: solid;
+}
+
+.big-cosmology,
+.big-evolution,
+.big-robotics,
+#robotics,
+#evolution,
+#cosmology {
+  background-color: var(--white);
+}
+
+#robotics h2,
+#evolution h2,
+#cosmology h2 {
+  box-sizing: border-box;
+  font-size: 25px;
+  color: var(--blue);
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+.robotics-text,
+.evolution-text,
+.cosmology-text {
+  box-sizing: border-box;
+  font-size: 15px;
+  padding: 20px;
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /*MOBILE SCREEN*/
@@ -363,6 +414,51 @@ ul {
   .teachers-content {
     height: 300px;
     max-width: 100%;
+  }
+
+  /*Exhibition spaces page*/
+
+  .ex-cta-small {
+    display: flex;
+    padding: 0px 7px;
+    font-size: 10px;
+    margin: 0 auto;
+  }
+
+  .ex-cta-small:hover {
+    color: var(--red);
+    font-size: 8px;
+  }
+
+  .ex-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-width: 280px;
+    max-width: 950px;
+    margin: 0 auto;
+  }
+
+  .small-robotics,
+  .small-cosmology,
+  .small-evolution {
+    max-width: 450px;
+    margin: 0px auto;
+  }
+
+  .small-cosmology {
+    margin-top: 30px;
+  }
+
+  .small-cosmology img,
+  .small-evolution img,
+  .small-robotics img {
+    max-width: 100%;
+  }
+
+  .small-cosmology img {
+    height: 400px;
+    object-fit: cover;
   }
 }
 
@@ -507,10 +603,9 @@ ul {
   /*explore page*/
 
   .big-explore-container {
-    display: flex;
-    flex-direction: row;
-    max-height: auto;
-    max-width: 100%;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
   }
 
   .big-teachers {
@@ -521,11 +616,63 @@ ul {
     box-sizing: border-box;
     max-width: 100%;
   }
+  .big-kids-content,
   .big-teachers-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    max-width: 400px;
     height: 350px;
   }
-  .big-kids-content {
-    max-height: 600px;
+
+  /*Exhibition spaces*/
+
+  .exhibition-links,
+  .exhibition-cta,
+  .ex-cta-small {
+    display: none;
+  }
+
+  .ex-cta-big {
+    display: flex;
+    flex-direction: column;
+    padding: 0px 20px 0px 20px;
+    font-size: 15px;
+    margin: 0 auto;
+  }
+
+  .ex-cta-big:hover {
+    color: var(--red);
+    font-size: 13px;
+  }
+
+  .big-ex-container {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+  }
+
+  .big-evolution,
+  .big-robotics,
+  .big-cosmology {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
+    margin: 0 auto;
+  }
+
+  .big-evolution img,
+  .big-cosmology img,
+  .big-robotics img {
     max-width: 100%;
+    object-fit: cover;
+    height: 300px;
+  }
+
+  .big-cosmology img {
+    object-position: top right 50px;
   }
 }
