@@ -243,7 +243,7 @@ ul {
 
 /*exhibition page*/
 
-.exhibition-links {
+#exhibition-links {
   box-sizing: border-box;
   display: flex;
   flex-direction: row;
@@ -258,42 +258,48 @@ ul {
   border-style: solid;
 }
 
-#ex-container {
+.ex-container {
   box-sizing: border-box;
-}
+  display: flex;
+  flex-direction: column;
+  min-width: 280px;
+  max-width: 950px;
 
-/* text over image learned from: https://css-tricks.com/text-blocks-over-image/b*/
-.robotics,
-.evolution,
-.cosmology {
-  box-sizing: border-box;
-  margin-top: 20px;
-  position: relative;
-  background-color: var(--white);
-  max-width: 100%;
-  margin-top: 0px;
-}
-
-.cosmology {
-  margin-top: 20px;
-}
-
-.robotics img,
-.evolution img,
-.cosmology img {
-  max-width: 100%;
   margin: 0 auto;
 }
 
-.robotics h2,
-.evolution h2,
-.cosmology h2 {
+#robotics,
+#evolution,
+#cosmology {
+  display: block;
   box-sizing: border-box;
-  position: absolute;
-  font-size: 30px;
+  margin-top: 20px;
+  background-color: var(--white);
+  max-width: 450px;
+  margin: 0px auto;
+}
+
+#cosmology {
+  margin-top: 30px;
+}
+
+
+#robotics img,
+#evolution img,
+#cosmology img {
+  max-width: 100%;
+  max-height: auto;
+  margin: 0 auto;
+}
+
+
+#robotics h2,
+#evolution h2,
+#cosmology h2 {
+font-size: 30px;
   top: 170px;
   left: 10px;
-  color: var(--white);
+  color: var(--blue);
   max-width: 100%;
 }
 
@@ -633,5 +639,39 @@ ul {
   .ex-cta-big:hover {
     color: var(--red);
     font-size: 13px;
+  }
+
+  .big-ex-container {
+    display: flex;
+    flex-direction: row;
+    box-sizing: border-box;
+  }
+
+  .big-cosmology {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .big-cosmology-text p {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--white);
+  }
+
+  .big-evolution {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .big-evolution {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .big-evolution img,
+  .big-robotics img,
+  .big-cosmology img {
+    max-width: 100%;
+    max-height: 450px;
   }
 }
