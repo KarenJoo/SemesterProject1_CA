@@ -23,7 +23,7 @@
 
 body {
   font-family: "inter", Verdana, Geneva, Tahoma, sans-serif;
-  background-color: var(--blue);
+  background-color: var(--grey);
   margin: 0px;
 }
 
@@ -285,6 +285,31 @@ ul {
   padding: 20px;
   max-width: 100%;
   margin: 0 auto;
+}
+
+/*About us*/
+
+#about-container {
+  background-image: url("../images/museum.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 800px;
+  max-width: 100%;
+  padding-top: 100px;
+}
+
+.about-content {
+  box-sizing: border-box;
+  background-color: rgba(255, 255, 255, 0.656);
+  padding: 20px;
+  max-width: 350px;
+  margin: 0 auto;
+}
+
+.about-map img {
+  object-fit: cover;
+  max-width: 100%;
+  height: 500px;
 }
 
 /*MOBILE SCREEN*/
@@ -576,11 +601,6 @@ ul {
     max-width: 100%;
     margin: 0px;
     flex: 2;
-  }
-
-  .exhibition h1,
-  .explore h1 {
-    flex-direction: row;
   }
 
   .big-exhibition-image,
