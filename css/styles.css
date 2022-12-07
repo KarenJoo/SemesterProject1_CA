@@ -192,6 +192,30 @@ ul {
   font-size: 25px;
 }
 
+.home-ex-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 100%;
+}
+
+.exhibition,
+.explore {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+
+/*intern link on a img tag learned from: https://stackoverflow.com/questions/22962704/simple-img-link-issue*/
+
+.exhibition img,
+.explore img {
+  display: flex;
+  flex-direction: column;
+  object-fit: cover;
+  height: 500px;
+  max-width: 100%;
+}
+
 #main-footer {
   background-color: var(--grey);
   color: #fff;
@@ -208,10 +232,10 @@ ul {
 
 /*Explore page*/
 
-#explore-container {
-  display: flex;
+.explore-ex-container {
   box-sizing: border-box;
   max-width: 100%;
+  margin: 0px;
 }
 
 .teachers,
@@ -399,24 +423,8 @@ ul {
     border-radius: 50%;
   }
 
-  .exhibition,
-  .explore {
-    font-size: 20px;
-    margin: 0px;
-  }
-
-  .exhibition-image,
-  .explore-image {
-    background-image: url("../images/painting-vr.webp");
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    height: 300px;
-    max-width: 100%;
-  }
-
-  .exhibition-image {
-    background-image: url("../images/astronaut_test.webp");
+  .explore img {
+    object-position: top 0 right 30%;
   }
 
   /*explore page*/
@@ -561,7 +569,7 @@ ul {
     max-width: 30%;
   }
 
-  /*home-page events container*/
+  /*homepage events container*/
 
   .big-news {
     display: flex;
@@ -592,51 +600,34 @@ ul {
     width: 15em;
   }
 
-  #explore-ex-container {
+  .big-home-ex-container {
     display: flex;
     flex-direction: row;
-    height: 600px;
     max-width: 100%;
   }
 
-  .big-explore h1,
-  .big-exhibition h1 {
-    font-size: 25px;
-  }
-
-  .explore {
+  .big-exhbition,
+  .big-explore {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    max-width: 100%;
-    margin: 0px;
-    flex: 1;
+    max-width: 600px;
+    margin: 0 auto;
   }
 
-  .exhbition {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    margin: 0px;
-    flex: 2;
-  }
-
-  .big-exhibition-image,
-  .big-explore-image {
-    background-image: url("../images/painting-vr.webp");
+  .big-explore img,
+  .big-exhibition img {
     display: flex;
     flex-direction: row;
-    height: 450px;
-    width: 100%;
-    background-position: top 0px right 35%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin: 0px;
   }
 
-  .big-exhibition-image {
-    background-image: url("../images/astronaut_test.webp");
+  .big-explore img {
+    object-position: top 0px left 80%;
   }
-
+  
+ 
+ 
+  }
   /*explore page*/
 
   .big-explore-container {
