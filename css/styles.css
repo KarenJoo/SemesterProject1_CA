@@ -289,6 +289,7 @@ ul {
 
 /*About us*/
 
+.big-about-container,
 #about-container {
   background-image: url("../images/museum.webp");
   background-repeat: no-repeat;
@@ -298,14 +299,19 @@ ul {
   padding-top: 100px;
 }
 
+.big-about-content,
 .about-content {
   box-sizing: border-box;
-  background-color: rgba(255, 255, 255, 0.656);
+  font-size: 14px;
+  background-color: rgba(255, 255, 255, 0.803);
   padding: 20px;
-  max-width: 350px;
+  width: 270px;
+  height: 500px;
+  max-height: 750px;
   margin: 0 auto;
 }
 
+.big-about-map img,
 .about-map img {
   object-fit: cover;
   max-width: 100%;
@@ -485,6 +491,16 @@ ul {
     height: 400px;
     object-fit: cover;
   }
+
+  /*about us*/
+
+  .small-info-container {
+    margin-top: 50px;
+  }
+
+  .small-location {
+    margin-top: 20px;
+  }
 }
 
 /*DESKTOP*/
@@ -530,6 +546,7 @@ ul {
     margin-top: 200px;
   }
 
+  .small-info-container,
   .info-container {
     box-sizing: border-box;
     display: flex;
@@ -694,5 +711,28 @@ ul {
 
   .big-cosmology img {
     object-position: top right 50px;
+  }
+
+  /*about us*/
+
+  .big-about-container {
+    margin-bottom: 50px;
+    max-height: 700px;
+    max-width: 100%;
+  }
+
+  .big-about-content {
+    font-size: 15px;
+    margin: 0px auto;
+    width: 600px;
+    height: 400px;
+  }
+
+  .big-about-map img {
+    box-sizing: border-box;
+    margin: 0 auto;
+    height: 630px;
+    object-fit: cover;
+    width: 100%;
   }
 }
