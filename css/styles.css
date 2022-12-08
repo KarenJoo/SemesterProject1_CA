@@ -652,29 +652,32 @@ ul {
   .big-kids,
   .big-teachers {
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
     max-width: 100%;
   }
 
   .big-kids-content,
   .big-teachers-content {
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
-    max-width: 350px;
+    max-width: 500px;
   }
 
   .big-kids-content p {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
 
   .big-teachers-content p {
     margin-bottom: 60px;
-    padding: 0px;
   }
 
-  .big-kids img {
-    height: 600px;
+  .big-kids img,
+  .big-teachers img {
     max-width: 100%;
+    height: 600px;
   }
 
   /*Exhibition spaces*/
