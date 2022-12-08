@@ -625,32 +625,42 @@ ul {
   .big-explore img {
     object-position: top 0px left 80%;
   }
-  
+
   /*explore page*/
 
   .big-explore-container {
+    display: flex;
     justify-content: center;
     margin: 0 auto;
     width: 100%;
   }
 
+  .big-kids,
   .big-teachers {
     box-sizing: border-box;
     max-width: 100%;
   }
-  .big-kids {
-    box-sizing: border-box;
-    max-width: 100%;
-  }
+
   .big-kids-content,
   .big-teachers-content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin: 0 auto;
-    max-width: 400px;
-    height: 350px;
+    max-width: 350px;
+  }
+
+  .big-kids-content p {
+    margin-bottom: 20px;
+  }
+
+  .big-teachers-content p {
+    margin-bottom: 60px;
+    padding: 0px;
+  }
+
+  .big-kids img {
+    height: 600px;
+    max-width: 100%;
   }
 
   /*Exhibition spaces*/
@@ -702,7 +712,6 @@ ul {
     object-position: top right 50%;
   }
 
-
   /*about us*/
 
   .big-about-container {
@@ -725,5 +734,4 @@ ul {
     object-fit: cover;
     width: 100%;
   }
-
 }
