@@ -1,30 +1,3 @@
-<svg width="145" height="142" viewBox="0 0 145 142" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g filter="url(#filter0_d_37_588)">
-<path d="M72.5 127.875C107.018 127.875 135 100.592 135 66.9375C135 33.2826 107.018 6 72.5 6C37.9822 6 10 33.2826 10 66.9375C10 100.592 37.9822 127.875 72.5 127.875Z" stroke="#333538" stroke-width="10.33" stroke-linecap="round" stroke-linejoin="round"/>
-<g filter="url(#filter1_d_37_588)">
-<path d="M96.8056 66.9374H72.5V33.0832" stroke="#333538" stroke-width="10.33" stroke-linecap="round" stroke-linejoin="round" shape-rendering="crispEdges"/>
-</g>
-</g>
-<defs>
-<filter id="filter0_d_37_588" x="0.834961" y="0.834991" width="143.33" height="140.205" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_588"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_588" result="shape"/>
-</filter>
-<filter id="filter1_d_37_588" x="63.335" y="27.9182" width="42.6355" height="52.1842" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_37_588"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_37_588" result="shape"/>
-</filter>
-</defs>
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M32 57.3333C45.9334 57.3333 57.3334 45.9333 57.3334 32C57.3334 18.0666 45.9334 6.66665 32 6.66665C18.0667 6.66665 6.66671 18.0666 6.66671 32C6.66671 45.9333 18.0667 57.3333 32 57.3333ZM32 0.333313C49.4167 0.333313 63.6667 14.5833 63.6667 32C63.6667 49.4166 49.4167 63.6666 32 63.6666C14.5834 63.6666 0.333374 49.4166 0.333374 32C0.333374 14.5833 14.5834 0.333313 32 0.333313ZM47.8334 30.4166V35.1666H28.8334V16.1666H33.5834V30.4166H47.8334Z" fill="#333538"/>
 </svg>
