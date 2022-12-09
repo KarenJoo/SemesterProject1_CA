@@ -23,7 +23,7 @@
 
 body {
   font-family: "inter", Verdana, Tahoma, sans-serif;
-  background-color: var(--grey);
+  background-color: var(--blue);
   margin: 0px;
 }
 
@@ -165,10 +165,10 @@ ul {
 }
 
 .news-container {
-  background-color: var(--blue);
+  background-color: var(--beige);
   padding: 10px;
   max-height: 700px;
-  color: var(--black);
+  color: var(--grey);
   max-width: 100%;
 }
 
