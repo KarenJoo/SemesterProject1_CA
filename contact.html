@@ -30,7 +30,27 @@
       </nav>
     </header>
     <main>
-      <h1>CONTACT</h1>
+      <section class="title-events">
+        <h1>CONTACT</h1>
+      </section>
+      <div id="contact-container">
+<section class="form-container">
+  <form action="submit.pht" method="POST">
+    <input type="text" name="firstname" />
+    <input type="submit"/>  
+  </form>
+    <label for="contact us as">I contact you as a</label>
+    <select name="contact-person" id="contact-person">
+      <option value="parent">select </option>      
+      <option value="lecturer">Lecturer</option>
+      <option value="parent">Parent</option>
+      <option value="student">Student</option>
+      <option value="journalist">Journalist</option>
+      <option value="other">other</option>
+    </select>
+    <textarea id="message" name="message" rows="10" cols="50"></textarea>
+</section>
+      </div>
     </main>
     <footer id="main-footer">
       <h3>COMMUNITY SCIENCE MUSEUM</h3>
