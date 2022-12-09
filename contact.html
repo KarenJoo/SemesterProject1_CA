@@ -10,7 +10,7 @@
     <link href="/css/styles.css" rel="stylesheet" />
     <title>Community Science Museum | Contact</title>
   </head>
-  <body>
+  <body class="contact-body">
     <header id="#header-container">        
       <input type="checkbox" id="menu-checkbox"/>
       <label for="menu-checkbox" alt="menu checkbox">   
@@ -30,7 +30,46 @@
       </nav>
     </header>
     <main>
-      <h1>CONTACT</h1>
+      <section class="title-events contact-title">
+        <h1>CONTACT</h1>
+      </section>
+    <div id="contact-container">
+        <section class="info-container contact-info-container"> 
+          <div class="phone">
+            <img src="../icons/phone.svg" alt="phone icon">
+             <p>(+47) 999 999 99</p>        
+          </div>
+          <div class="location">
+            <img src="../icons/location.svg" alt="location icon">
+            <p>Havnegata 12</p>
+            <p>7010 Trondheim</p>   
+          </div>
+          <div class="mail">
+            <img src="../icons/mail.svg" alt="ticket icon">
+            <p>support@science.museum.com</p>    
+          </div>
+        </section>
+      <section class="form-container">        
+        <h2>SEND US A MESSAGE HERE</h2>
+  <form action="form-success.php" method="POST">
+    <label for="name">Your name</label>
+    <input type="text" name="name" id="name" class="form_input" required>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" class="form_input" required>
+    <label for="contact us as">I contact you as a</label>
+    <select name="contact-person" id="contact-person">
+      <option value="parent">select </option>      
+      <option value="lecturer">Teacher/Lecturer</option>
+      <option value="parent">Parent</option>
+      <option value="student">Student/pupil</option>
+      <option value="journalist">Journalist/Researcher</option>
+      <option value="other">other</option>
+    </select>
+    <textarea id="message" name="message" rows="10" cols="45"></textarea>
+    <input type="submit"/> 
+  </form> 
+</section>
+      </div>
     </main>
     <footer id="main-footer">
       <h3>COMMUNITY SCIENCE MUSEUM</h3>
