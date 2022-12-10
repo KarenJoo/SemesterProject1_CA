@@ -399,12 +399,13 @@ ul {
 
 .admission-container,
 .form-container {
+  box-sizing: border-box;
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.609);
   margin: 10px auto;
   font-size: 12px;
   color: var(--grey);
-  max-width: 300px;
+  max-width: 310px;
   box-shadow: var(--box-shadow);
 }
 
@@ -423,12 +424,15 @@ ul {
 
 .admission-container p {
   margin-top: 0px;
+  padding-bottom: 10px;
 }
 
+.big-name,
+.big-email,
 #email,
 #name {
   display: flex;
-  padding-right: 150px;
+  padding-right: 90px;
   color: var(--grey);
 }
 
@@ -840,4 +844,30 @@ ul {
   }
 
   /*contact page*/
+
+  .contact-flex-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .big-name,
+  .big-email {
+    padding: 0px 30px;
+  }
+
+  .big-admission {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .big-form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
+  }
 }
