@@ -432,12 +432,12 @@ ul {
 #email,
 #name {
   display: flex;
-  padding-right: 90px;
+  padding-right: 120px;
   color: var(--grey);
 }
 
 #contact-person {
-  margin: 10px auto;
+  margin: 10px 0px 20px 10px;
 }
 
 #message {
@@ -850,11 +850,6 @@ ul {
     flex-direction: row;
     max-width: 800px;
     margin: 0 auto;
-  }
-
-  .big-name,
-  .big-email {
-    padding: 0px 30px;
   }
 
   .big-admission {
