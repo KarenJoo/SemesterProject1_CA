@@ -3,12 +3,14 @@
   src: url("../Roboto/Roboto-Regular.ttf") format("truetype");
 }
 
+/*Box-shadow effect with blur learned from: https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
+
 :root {
   --red: #ac441d;
   --beige: #e3d3b3;
   --grey: #333538;
   --black: #000;
-  --blue: #5f7b89;
+  --box-shadow: 2px 2px 8px #0000002c;
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
 }
@@ -101,8 +103,8 @@ ul {
 }
 
 .grey-container {
-  background-color: var(--white);
-  color: var(--grey);
+  background-color: var(--grey);
+  color: var(--white);
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -122,8 +124,7 @@ ul {
   box-sizing: border-box;
   background-color: rgb(255, 255, 255);
   border-color: var(--black);
-  border-width: 0.1px;
-  border-style: solid;
+  box-shadow: var(--box-shadow);
   color: var(--grey);
   display: flex;
   flex-direction: column;
@@ -168,9 +169,11 @@ ul {
 .news-container {
   background-color: var(--white);
   padding: 10px;
+  margin: 0 auto;
+  box-shadow: var(--box-shadow);
   max-height: 700px;
   color: var(--black);
-  max-width: 100%;
+  width: 600px;
 }
 
 .news-container h2 {
@@ -178,6 +181,7 @@ ul {
   display: flex;
   font-size: 40px;
   justify-content: center;
+  color: var(--grey);
 }
 
 .small-news-image,
@@ -229,6 +233,7 @@ ul {
   object-fit: cover;
   height: 500px;
   max-width: 100%;
+  box-shadow: var(--box-shadow);
 }
 
 #main-footer {
@@ -259,6 +264,7 @@ ul {
   padding: 30px;
   margin: 0 10px auto;
   height: 900px;
+  box-shadow: var(--box-shadow);
 }
 
 .teachers-image,
@@ -275,9 +281,17 @@ ul {
 }
 
 .explore-cta {
-  color: var(--beige);
-  font-size: 30px;
+  margin: 20px auto;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  color: var(--red);
+  font-size: 12px;
+  padding: 20px 40px 10px 40px;
   text-decoration: none;
+}
+
+.explore-cta p {
+  color: var(--black);
 }
 
 /*exhibition page*/
@@ -304,6 +318,7 @@ ul {
 #evolution,
 #cosmology {
   background-color: var(--white);
+  box-shadow: var(--box-shadow);
 }
 
 #robotics h2,
@@ -342,7 +357,7 @@ ul {
 .about-content {
   box-sizing: border-box;
   font-size: 14px;
-  background-color: rgba(255, 255, 255, 0.803);
+  background-color: rgba(255, 255, 255, 0.835);
   padding: 20px;
   width: 270px;
   height: 500px;
