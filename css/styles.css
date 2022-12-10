@@ -173,7 +173,7 @@ ul {
   box-shadow: var(--box-shadow);
   max-height: 700px;
   color: var(--black);
-  width: 600px;
+  max-width: 600px;
 }
 
 .news-container h2 {
@@ -397,30 +397,47 @@ ul {
   padding-top: 40px;
 }
 
+.admission-container,
 .form-container {
+  box-sizing: border-box;
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.609);
-  margin: 0 auto;
+  margin: 10px auto;
   font-size: 12px;
   color: var(--grey);
-  max-width: 100%;
+  max-width: 310px;
+  box-shadow: var(--box-shadow);
 }
 
+.admission-container h2,
 .form-container h2 {
   font-size: 20px;
-  text-align: center;
   justify-content: center;
-  margin: 0 auto;
+  margin: 0px auto;
   padding-bottom: 30px;
   color: var(--blue);
 }
 
-#contact-person,
+.admission-container h3 {
+  margin-top: 40px;
+}
+
+.admission-container p {
+  margin-top: 0px;
+  padding-bottom: 10px;
+}
+
+.big-name,
+.big-email,
 #email,
 #name {
   display: flex;
-  margin-bottom: 10px;
+  padding-right: 90px;
   color: var(--grey);
+}
+
+#contact-person {
+  margin: 10px auto;
 }
 
 #message {
@@ -428,6 +445,7 @@ ul {
   max-width: 100%;
   margin-bottom: 10px;
 }
+
 /*MOBILE SCREEN*/
 
 @media screen and (min-width: 250px) and (max-width: 600px) {
@@ -641,13 +659,14 @@ ul {
     margin-top: 200px;
   }
 
+  .contact-info-container,
   .small-info-container,
   .info-container {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
     margin: 0 auto 20px;
-    max-width: 90%;
+    max-width: 700px;
     max-height: 400px;
     padding: 40px 20px 40px 20px;
   }
@@ -801,7 +820,7 @@ ul {
     object-position: top right 50%;
   }
 
-  /*about us*/
+  /*about us page*/
 
   .big-about-container {
     margin-bottom: 50px;
@@ -822,5 +841,33 @@ ul {
     height: 630px;
     object-fit: cover;
     width: 100%;
+  }
+
+  /*contact page*/
+
+  .contact-flex-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+
+  .big-name,
+  .big-email {
+    padding: 0px 30px;
+  }
+
+  .big-admission {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+  }
+
+  .big-form {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    width: 300px;
+    padding: 20px;
   }
 }

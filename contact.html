@@ -49,27 +49,36 @@
             <p>support@science.museum.com</p>    
           </div>
         </section>
-      <section class="form-container">        
-        <h2>SEND US A MESSAGE HERE</h2>
+        <div class="contact-flex-container">
+        <section class="admission-container big-admission">
+          <h2>Admission</h2>
+          <p>The entrance is free for all.</p>
+          <h3>Guided Tours</h3>
+          <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person.</p>
+          <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
+        </section>
+      <section class="form-container big-form">        
+        <h2>Send us a message</h2>
   <form action="form-success.php" method="POST">
     <label for="name">Your name</label>
-    <input type="text" name="name" id="name" class="form_input" required>
+    <input type="text" name="name" id="name" class="form_input big-name" required>
     <label for="email">Email</label>
-    <input type="email" name="email" id="email" class="form_input" required>
+    <input type="email" name="email" id="email" class="form_input big-email" required>
     <label for="contact us as">I contact you as a</label>
     <select name="contact-person" id="contact-person">
-      <option value="parent">select </option>      
+      <option value="select">select </option>      
       <option value="lecturer">Teacher/Lecturer</option>
       <option value="parent">Parent</option>
       <option value="student">Student/pupil</option>
       <option value="journalist">Journalist/Researcher</option>
       <option value="other">other</option>
-    </select>
-    <textarea id="message" name="message" rows="10" cols="45"></textarea>
+      </select>
+    <textarea id="message" name="message" rows="10" cols="50"></textarea>
     <input type="submit"/> 
   </form> 
 </section>
       </div>
+    </div>
     </main>
     <footer id="main-footer">
       <h3>COMMUNITY SCIENCE MUSEUM</h3>
