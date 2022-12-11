@@ -276,14 +276,18 @@ ul {
   max-width: 100%;
 }
 
+.big-explore-contact,
 .explore-contact {
   text-align: center;
+  padding: 10px;
+  background-color: var(--white);
+  box-shadow: var(--box-shadow);
+  margin: 30px auto;
+  max-width: 320px;
 }
 
 .explore-cta {
   margin: 20px auto;
-  background-color: var(--white);
-  box-shadow: var(--box-shadow);
   color: var(--red);
   font-size: 12px;
   padding: 20px 40px 10px 40px;
@@ -305,7 +309,7 @@ ul {
 
 .ex-cta-small,
 .exhibition-cta {
-  color: #fff;
+  color: var(--grey);
   font-size: 12px;
   text-decoration: none;
   border-style: solid;
@@ -774,6 +778,10 @@ ul {
     height: 600px;
   }
 
+  .big-explore-contact {
+    max-width: 700px;
+  }
+
   /*Exhibition spaces*/
 
   .exhibition-links,
@@ -860,5 +868,4 @@ ul {
     flex-direction: column;
     box-sizing: border-box;
   }
-
 }
