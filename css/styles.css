@@ -432,12 +432,15 @@ ul {
 #email,
 #name {
   display: flex;
+  box-sizing: border-box;
   padding-right: 90px;
+  margin-bottom: 10px;
+  max-width: 100%;
   color: var(--grey);
 }
 
 #contact-person {
-  margin: 10px auto;
+  margin: 0px auto 10px;
 }
 
 #message {
@@ -852,22 +855,10 @@ ul {
     margin: 0 auto;
   }
 
-  .big-name,
-  .big-email {
-    padding: 0px 30px;
-  }
-
   .big-admission {
     display: flex;
     flex-direction: column;
     box-sizing: border-box;
   }
 
-  .big-form {
-    display: flex;
-    flex-direction: column;
-    box-sizing: border-box;
-    width: 300px;
-    padding: 20px;
-  }
 }
