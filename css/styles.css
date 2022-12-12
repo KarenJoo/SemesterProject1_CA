@@ -13,6 +13,8 @@
   --box-shadow: 2px 2px 8px #0000002c;
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
+  --lightblue: #bccaea;
+  --blue: #3e67c5;
 }
 .big-logo,
 .small-logo,
@@ -20,7 +22,7 @@
   background-image: url("../icons/LOGO.svg");
   background-size: contain;
   background-repeat: no-repeat;
-  margin: 10px auto;
+  margin: 20px auto;
   height: 80px;
   width: 130px;
 }
@@ -49,7 +51,7 @@ header {
 
 h1 {
   font-size: 40px;
-  color: var(--red);
+  color: var(--blue);
   margin: 0px;
   padding-top: 30px;
   padding-left: 0px;
@@ -63,12 +65,12 @@ p {
 /*links in nav*/
 header a {
   text-decoration: none;
-  color: var(--beige);
+  color: var(--lightblue);
   background: var(--black);
 }
 
 nav a:hover {
-  color: var(--red);
+  color: var(--blue);
 }
 
 ul {
@@ -78,7 +80,7 @@ ul {
 }
 
 .active {
-  color: var(--red);
+  color: var(--blue);
 }
 
 /*home page*/
@@ -103,14 +105,15 @@ ul {
 }
 
 .grey-container {
-  background-color: var(--grey);
-  color: var(--white);
+  background-color: var(--blue);
+  color: var(--lightblue);
   display: flex;
   flex-direction: column;
   text-align: center;
   max-width: 100%;
   padding: 0px 50px 50px;
   margin: 40px 0px 40px;
+  box-shadow: var(--box-shadow);
 }
 
 .grey-container h2 {
@@ -122,10 +125,9 @@ ul {
 
 .info-container {
   box-sizing: border-box;
-  background-color: rgb(255, 255, 255);
-  border-color: var(--black);
+  background-color: var(--black);
   box-shadow: var(--box-shadow);
-  color: var(--grey);
+  color: var(--lightblue);
   display: flex;
   flex-direction: column;
 }
@@ -133,7 +135,6 @@ ul {
 .clock {
   display: flex;
   flex-direction: column;
-  text-align: left;
   margin: 30px auto;
 }
 
@@ -166,6 +167,7 @@ ul {
   padding: 130px 20px 10px;
 }
 
+.internships-container,
 .news-container {
   background-color: var(--white);
   padding: 10px;
@@ -176,6 +178,7 @@ ul {
   max-width: 600px;
 }
 
+.internships-container h2,
 .news-container h2 {
   box-sizing: border-box;
   display: flex;
@@ -204,6 +207,38 @@ ul {
 .news h3 {
   text-align: center;
   font-size: 25px;
+}
+
+.internships-container {
+  margin: 10px auto;
+  box-sizing: border-box;
+  background-color: #ac441d;
+}
+
+.internships li {
+  background-color: var(--white);
+}
+
+.internships-cta h3 {
+  padding: 0px 7px;
+  font-size: 20px;
+  margin: 0 auto;
+  color: var(--black);
+}
+
+.internships-link {
+  background-color: var(--white);
+  width: 200px;
+  color: var(--black);
+  margin: 0 auto;
+  text-align: center;
+  border-style: solid;
+  padding: 0px 10px 0px 10px;
+}
+.internships-link:hover {
+  color: var(--red);
+  font-size: 10px;
+  width: 150px;
 }
 
 .home-ex-container {
@@ -286,6 +321,7 @@ ul {
   max-width: 320px;
 }
 
+.internships-cta,
 .explore-cta {
   margin: 20px auto;
   color: var(--red);
@@ -298,7 +334,7 @@ ul {
   color: var(--black);
 }
 
-/*exhibition page*/
+/*exhibition spaces page*/
 
 #exhibition-links {
   box-sizing: border-box;
@@ -475,7 +511,6 @@ ul {
   .menu-line {
     width: 25px;
     height: 2px;
-    background-color: var(--beige);
     margin-bottom: 4px;
     display: block;
   }
@@ -641,7 +676,7 @@ ul {
   }
 
   .big-logo {
-    margin: 10px;
+    margin: 20px;
   }
 
   /*links*/
@@ -788,19 +823,6 @@ ul {
   .exhibition-cta,
   .ex-cta-small {
     display: none;
-  }
-
-  .ex-cta-big {
-    display: flex;
-    flex-direction: column;
-    padding: 0px 20px 0px 20px;
-    font-size: 15px;
-    margin: 0 auto;
-  }
-
-  .ex-cta-big:hover {
-    color: var(--red);
-    font-size: 13px;
   }
 
   .big-ex-container {
