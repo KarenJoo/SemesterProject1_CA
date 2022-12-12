@@ -163,28 +163,33 @@ ul {
 .big-exhibition,
 .big-explore,
 .title-events h1 {
-  color: var(--red);
+  color: var(--blue);
   padding: 130px 20px 10px;
 }
 
 .internships-container,
 .news-container {
-  background-color: var(--white);
+  background-color: var(--lightblue);
   padding: 10px;
   margin: 0 auto;
   box-shadow: var(--box-shadow);
   max-height: 700px;
   color: var(--black);
-  max-width: 600px;
+  max-width: 500px;
 }
 
 .internships-container h2,
 .news-container h2 {
   box-sizing: border-box;
   display: flex;
-  font-size: 40px;
+  margin: 40px auto;
+  font-size: 30px;
   justify-content: center;
-  color: var(--grey);
+  color: var(--blue);
+}
+
+.internships-container h2 {
+  color: var(--white);
 }
 
 .small-news-image,
@@ -210,35 +215,22 @@ ul {
 }
 
 .internships-container {
-  margin: 10px auto;
+  margin: 12px auto;
+  padding: 20px;
   box-sizing: border-box;
-  background-color: #ac441d;
+  color: var(--white);
+  background-color: var(--blue);
 }
 
 .internships li {
-  background-color: var(--white);
+  background-color: var(--blue);
 }
 
 .internships-cta h3 {
-  padding: 0px 7px;
-  font-size: 20px;
+  padding: 0px 5px;
+  font-size: 15px;
   margin: 0 auto;
-  color: var(--black);
-}
-
-.internships-link {
-  background-color: var(--white);
-  width: 200px;
-  color: var(--black);
-  margin: 0 auto;
-  text-align: center;
-  border-style: solid;
-  padding: 0px 10px 0px 10px;
-}
-.internships-link:hover {
-  color: var(--red);
-  font-size: 10px;
-  width: 150px;
+  color: var(--white);
 }
 
 .home-ex-container {
@@ -324,7 +316,7 @@ ul {
 .internships-cta,
 .explore-cta {
   margin: 20px auto;
-  color: var(--red);
+  color: var(--lightblue);
   font-size: 12px;
   padding: 20px 40px 10px 40px;
   text-decoration: none;
@@ -336,6 +328,7 @@ ul {
 
 /*exhibition spaces page*/
 
+.internships-link,
 #exhibition-links {
   box-sizing: border-box;
   display: flex;
@@ -345,7 +338,7 @@ ul {
 
 .ex-cta-small,
 .exhibition-cta {
-  color: var(--grey);
+  color: var(--blue);
   font-size: 12px;
   text-decoration: none;
   border-style: solid;
@@ -611,7 +604,7 @@ ul {
   }
 
   .ex-cta-small:hover {
-    color: var(--red);
+    color: var(--lightblue);
     font-size: 8px;
   }
 
