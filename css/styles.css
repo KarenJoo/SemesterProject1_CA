@@ -166,6 +166,7 @@ ul {
   padding: 10px 20px 10px;
 }
 
+.cafe-container,
 .news2-container,
 .internship-container,
 .news-container {
@@ -179,6 +180,7 @@ ul {
   margin-top: 20px;
 }
 
+.cafe-container h2,
 .news2-container h2,
 .internship-container h2,
 .news-container h2 {
@@ -190,30 +192,62 @@ ul {
   color: var(--blue);
 }
 
+.news2-container h2 {
+  color: var(--lightblue)
+}
+
 .small-news-image,
-.big-news-image,
-.news-image {
+.big-news-image {
   background-image: url("../images/professora.webp");
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 50%;
 }
 
+.news2-container {
+  background-color: #0D0D0B;
+  color: var(--lightblue);
+}
+
+.grid-info {
+  background-color: var(--white);
+  color: var(--black);
+  margin: 50px auto;
+  width: 300px;
+  padding: 10px;
+}
+.news2-image {
+  background-image: url("../images/moon.webp");
+  background-size: cover;
+  height: 100px;
+  max-width: 100%;
+  margin-top: 100px;
+  background-position: center;
+}
+
+.cafe p,
 .news2 p,
 .internship p,
 .news p {
   display: flex;
   flex-direction: column;
   font-size: 15px;
-  margin: 10px;
   justify-content: center;
 }
 
+.contact-cta {
+  color: var(--lightblue);
+  text-decoration: none;
+  border-style: solid;
+}
+
+.cafe h3,
 .news2 h3,
 .internship h3,
 .news h3 {
   text-align: center;
-  font-size: 15px;
+
+font-size: 15px;
 }
 
 .home-ex-container {
@@ -698,6 +732,7 @@ ul {
     grid-gap: 1em;
     grid-template-columns: auto auto;
     max-width: 900px;
+    padding: 20px;
     margin: 0 auto;
   }
 
