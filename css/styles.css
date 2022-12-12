@@ -124,12 +124,11 @@ ul {
 }
 
 .info-container {
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
   background-color: var(--black);
   box-shadow: var(--box-shadow);
   color: var(--lightblue);
-  display: flex;
-  flex-direction: column;
 }
 
 .clock {
@@ -164,21 +163,26 @@ ul {
 .big-explore,
 .title-events h1 {
   color: var(--blue);
-  padding: 130px 20px 10px;
+  padding: 10px 20px 10px;
 }
 
-.internships-container,
+.cafe-container,
+.news2-container,
+.internship-container,
 .news-container {
   background-color: var(--lightblue);
-  padding: 10px;
+  padding: 20px;
   margin: 0 auto;
   box-shadow: var(--box-shadow);
   max-height: 700px;
   color: var(--black);
-  max-width: 500px;
+  max-width: 450px;
+  margin-top: 20px;
 }
 
-.internships-container h2,
+.cafe-container h2,
+.news2-container h2,
+.internship-container h2,
 .news-container h2 {
   box-sizing: border-box;
   display: flex;
@@ -188,61 +192,77 @@ ul {
   color: var(--blue);
 }
 
-.internships-container h2 {
-  color: var(--white);
+.news2-container h2 {
+  color: var(--lightblue);
 }
 
-.internships-cta {
-  color: white;
-  border-style: solid;
-  text-decoration: none;
-  width: 130px;
-  height: 20px;
-  margin: 30px auto;
-  padding: 20px;
-  text-align: center;
-  font-size: 15px;
-}
-
-.small-news-image,
-.big-news-image,
 .news-image {
   background-image: url("../images/professora.webp");
   background-size: cover;
-  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  margin: 50px auto;
+  height: 16em;
+  width: 16em;
+  background-position: top 20% left 0%;
   border-radius: 50%;
 }
 
+.news2-container {
+  background-color: #0d0d0b;
+  color: var(--lightblue);
+}
+
+.grid-info {
+  background-color: var(--white);
+  color: var(--black);
+  margin: 50px auto;
+  width: 300px;
+  padding: 10px;
+}
+
+.news2-image {
+  background-image: url("../images/moon.webp");
+  background-size: cover;
+  height: 100px;
+  max-width: 100%;
+  margin-top: 50px;
+  background-position: center;
+}
+
+.cafe p,
+.news2 p,
+.internship p,
 .news p {
   display: flex;
   flex-direction: column;
-  font-size: 20px;
-  margin: 10px;
+  font-size: 15px;
   justify-content: center;
 }
 
+.internship-cta,
+.contact-cta {
+  box-sizing: border-box;
+  font-size: 15px;
+  color: var(--lightblue);
+  text-decoration: none;
+  border-style: solid;
+  text-align: center;
+  margin: 20px 100px;
+  padding: 20px;
+}
+
+.internship-cta {
+  color: var(--blue);
+  font-size: 13px;
+}
+
+.cafe h3,
+.news2 h3,
+.internship h3,
 .news h3 {
   text-align: center;
-  font-size: 25px;
-}
-
-.internships-container {
-  margin: 12px auto;
-  padding: 20px;
-  box-sizing: border-box;
-  color: var(--white);
-  background-color: var(--blue);
-}
-
-.internships li {
-  background-color: var(--blue);
-}
-
-.internships-cta h3 {
-  padding: 0px 5px;
   font-size: 15px;
-  margin: 0 auto;
-  color: var(--white);
 }
 
 .home-ex-container {
@@ -558,21 +578,6 @@ ul {
     padding-top: 70px;
   }
 
-  .news-container {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .small-news-image {
-    display: flex;
-    flex-direction: column;
-    margin: 20px auto;
-    height: 16em;
-    width: 16em;
-    background-position: top 20% left 0%;
-    border-radius: 50%;
-  }
-
   .explore img {
     object-position: top 0 right 30%;
   }
@@ -723,58 +728,17 @@ ul {
 
   /*homepage events container*/
 
-  .flex-container {
-    display: flex;
-    justify-content: space-between;
+  .big-info-container {
+    max-width: 900px;
   }
 
-  .big-internships,
-  .big-news {
-    display: flex;
-    flex-direction: column;
-    max-width: 100%;
-    font-size: 20px;
-  }
-
-  .big-news p {
-    display: flex;
-    flex-direction: column;
-    margin: 0px 20px 0px 20px;
-  }
-
-  .big-news h3,
-  .big-events h2 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .big-news-image {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 40%;
-    height: 13em;
-    width: 15em;
-  }
-
-  .internships-link {
-    height: 200px;
-  }
-
-  .big-internships-cta {
-    font-size: 20px;
-    height: 60px;
-    width: 200px;
+  .grid-container {
+    display: grid;
+    grid-gap: 1em;
+    grid-template-columns: auto auto;
+    max-width: 900px;
     padding: 20px;
-  }
-
-  .big-internships-cta:hover {
-    font-size: 17px;
-    height: 50px;
-    width: 190px;
-    text-align: center;
-    padding-bottom: 20px;
+    margin: 0 auto;
   }
 
   .big-home-ex-container {
