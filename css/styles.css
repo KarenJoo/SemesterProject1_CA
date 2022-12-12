@@ -101,7 +101,7 @@ ul {
 }
 
 .hero-content h2 {
-  margin-top: 100px;
+  margin-top: 200px;
 }
 
 .grey-container {
@@ -190,6 +190,21 @@ ul {
 
 .internships-container h2 {
   color: var(--white);
+}
+
+.internships-link {
+}
+
+.internships-cta {
+  color: white;
+  border-style: solid;
+  text-decoration: none;
+  width: 130px;
+  height: 20px;
+  margin: 30px auto;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
 }
 
 .small-news-image,
@@ -313,7 +328,6 @@ ul {
   max-width: 320px;
 }
 
-.internships-cta,
 .explore-cta {
   margin: 20px auto;
   color: var(--lightblue);
@@ -418,7 +432,7 @@ ul {
 .contact-info-container {
   display: flex;
   flex-direction: column;
-  background-color: var(--white);
+  background-color: var(--black);
   max-width: 300px;
   margin: 0 auto 25px;
 }
