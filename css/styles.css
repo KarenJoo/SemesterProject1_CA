@@ -192,9 +192,6 @@ ul {
   color: var(--white);
 }
 
-.internships-link {
-}
-
 .internships-cta {
   color: white;
   border-style: solid;
@@ -726,6 +723,12 @@ ul {
 
   /*homepage events container*/
 
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .big-internships,
   .big-news {
     display: flex;
     flex-direction: column;
@@ -755,10 +758,28 @@ ul {
     width: 15em;
   }
 
+  .internships-link {
+    height: 200px;
+  }
+
+  .big-internships-cta {
+    font-size: 20px;
+    height: 60px;
+    width: 200px;
+    padding: 20px;
+  }
+
+  .big-internships-cta:hover {
+    font-size: 17px;
+    height: 50px;
+    width: 190px;
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
   .big-home-ex-container {
     display: flex;
     flex-direction: row;
-    max-width: 100%;
   }
 
   .big-exhbition,
