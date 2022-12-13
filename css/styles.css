@@ -135,7 +135,7 @@ ul {
 .grey-content {
   background-color: rgba(255, 255, 255, 0.66);
   margin: 50px auto;
-  padding-bottom: 50px;
+  padding: 20px;
 }
 
 .grey-container h2 {
@@ -418,7 +418,7 @@ ul {
 .kids {
   background-color: var(--white);
   padding: 30px;
-  margin: 0 10px auto;
+  margin: 10px 0px auto;
   height: 900px;
   box-shadow: var(--box-shadow);
 }
@@ -438,7 +438,7 @@ ul {
   padding: 10px;
   background-color: var(--white);
   box-shadow: var(--box-shadow);
-  margin: 30px auto;
+  margin: 10px auto;
   max-width: 320px;
 }
 
@@ -446,7 +446,7 @@ ul {
   margin: 20px auto;
   color: var(--black);
   font-size: 12px;
-  padding: 20px 40px 10px 40px;
+  padding: 0px 40px 10px 40px;
   text-decoration: none;
 }
 
@@ -701,7 +701,7 @@ ul {
     display: flex;
     flex-direction: column;
     max-width: 450px;
-    margin: 0 auto;
+    margin: 20px auto;
   }
 
   .kids-content {
@@ -710,13 +710,10 @@ ul {
   }
 
   .teachers-content {
-    height: 50px;
-  }
-
-  .teachers-content {
     height: 300px;
     max-width: 100%;
   }
+
 
   /*Exhibition spaces page*/
 
