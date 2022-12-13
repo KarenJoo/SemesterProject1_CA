@@ -351,8 +351,8 @@ ul {
 .big-exhibition,
 .big-explore,
 .title-events h1 {
-  color: var(--blue);
-  padding: 40px 20px 10px;
+  color: var(--black);
+  padding: 150px 20px 10px;
 }
 
 .exhibition,
@@ -423,7 +423,7 @@ ul {
 .explore-contact {
   text-align: center;
   padding: 10px;
-  background-color: var(--white);
+  background-color: var(--lightblue);
   box-shadow: var(--box-shadow);
   margin: 30px auto;
   max-width: 320px;
@@ -431,15 +431,12 @@ ul {
 
 .explore-cta {
   margin: 20px auto;
-  color: var(--lightblue);
+  color: var(--black);
   font-size: 12px;
   padding: 20px 40px 10px 40px;
   text-decoration: none;
 }
 
-.explore-cta p {
-  color: var(--black);
-}
 
 /*exhibition spaces page*/
 
