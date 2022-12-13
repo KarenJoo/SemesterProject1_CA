@@ -10,7 +10,7 @@
   --beige: #e3d3b3;
   --grey: #333538;
   --black: #000;
-  --box-shadow: 2px 2px 8px #0000002c;
+  --box-shadow: 5px 5px 10px #0000002c;
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
   --lightblue: #bccaea;
@@ -51,7 +51,7 @@ header {
 
 h1 {
   font-size: 40px;
-  color: var(--blue);
+  color: var(--black);
   margin: 0px;
   padding-top: 30px;
   padding-left: 0px;
@@ -88,25 +88,41 @@ ul {
   background-image: url("../images/red-boy-1.webp");
   background-size: cover;
   background-repeat: no-repeat;
-  height: 1200px;
-  max-width: 100%;
+  height: 1000px;
+  max-width: 900px;
+  margin: 0px auto;
+  box-shadow: var(--box-shadow);
   background-position: bottom 80% right 0px;
 }
 
+.hero-content-big,
 .hero-content {
   display: flex;
   flex-direction: column;
-  text-align: center;
   color: var(--white);
+  background-color: rgba(0, 0, 0, 0.804);
+  padding: 10px;
 }
 
 .hero-content h2 {
-  margin-top: 200px;
+  font-size: 18px;
+  margin-top: 150px;
+  text-align: center;
+  padding: 20px 20px 0px 20px;
 }
 
+.hero-content h3 {
+  font-size: 14px;
+  margin-top: 0px;
+  text-align: center;
+}
+
+.big-grey-container,
 .grey-container {
-  background-color: var(--blue);
-  color: var(--lightblue);
+  background-image: url(../images/white.webp);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top 50% left;
   display: flex;
   flex-direction: column;
   text-align: center;
@@ -116,10 +132,16 @@ ul {
   box-shadow: var(--box-shadow);
 }
 
+.grey-content {
+  background-color: rgba(255, 255, 255, 0.66);
+  margin: 50px auto;
+  padding-bottom: 50px;
+}
+
 .grey-container h2 {
   font-size: 50px;
   font-style: italic;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-bottom: 0px;
 }
 
@@ -159,11 +181,12 @@ ul {
 
 /*homepage - event containers*/
 
+/*grid container*/
 .grid-container {
   display: grid;
   grid-gap: 0.5em;
-  grid-template-rows: auto auto auto auto;
-  max-width: 100%;
+  grid-template-rows: auto;
+  max-width: 400px;
   padding: 0px;
   margin: 0 auto;
 }
@@ -172,13 +195,14 @@ ul {
 .news2-container,
 .internship-container,
 .news-container {
+  display: flex;
+  flex-direction: column;
   background-color: var(--black);
   padding: 0px 20px;
   margin: 0 auto;
+  height: 600px;
   box-shadow: var(--box-shadow);
-  max-height: 700px;
   color: var(--black);
-  width: 350px;
   margin-top: 20px;
 }
 
@@ -190,7 +214,7 @@ ul {
   background-image: url(../icons/cafe.svg);
   background-repeat: no-repeat;
   background-size: contain;
-  margin-top: 10px;
+  margin: 20px auto;
   width: 300px;
   height: 100px;
 }
@@ -233,20 +257,18 @@ ul {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top 50%;
-  height: 600px;
   max-width: 100%;
 }
 
 .internship-container {
   background-image: url("../images/internship.webp");
-  background-position: top 20%;
+  height: 500px;
 }
 
-.internship,
 .news2 {
   background-color: var(--white);
   color: var(--black);
-  padding: 10px;
+  padding: 20px;
   margin: 0 auto;
 }
 
@@ -254,15 +276,50 @@ ul {
   display: flex;
   flex-direction: column;
   padding: 10px;
-  height: 170px;
+  height: 200px;
+  max-width: 100%;
+  background-color: var(--white);
 }
 
 .grid-info {
   background-color: rgba(255, 255, 255, 0.753);
   color: var(--black);
-  margin: 10px auto 110px;
+  margin: 10px auto 10px;
   width: 260px;
   padding: 0px 20px 10px 0px;
+}
+
+.cafe-info {
+  margin-top: 10px;
+  padding: 20px;
+  width: 180px;
+  margin: 20px auto 20px;
+  border-color: var(--lightblue);
+  border-style: solid;
+  border-width: 0.1px;
+}
+
+.internship-cta,
+.contact-cta {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: var(--white);
+  text-decoration: none;
+  border-style: solid;
+  margin: 0px auto;
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.contact-cta {
+  margin-top: 30px;
+}
+
+.internship-cta {
+  display: flex;
+  box-sizing: border-box;
+  margin-top: 90px;
 }
 
 .cafe p,
@@ -275,6 +332,7 @@ ul {
   flex-direction: column;
   font-size: 13px;
   margin-bottom: 0px;
+  background-color: var();
 }
 
 .cafe p {
@@ -288,36 +346,14 @@ ul {
   margin-top: 0px auto;
 }
 
-.cafe-info {
-  margin-top: 10px;
-  padding: 20px;
-  width: 180px;
-  margin: 20px auto 20px;
-  border-color: var(--lightblue);
-  border-style: solid;
-  border-width: 0.1px;
-}
-
-.contact-cta {
-  display: flex;
-  font-size: 15px;
-  color: var(--white);
-  text-decoration: none;
-  border-style: solid;
-  margin: 100px auto;
-  padding: 10px 20px;
-}
-
-.internship-cta {
-  margin: 130px auto;
-}
-
 .cafe h3,
 .news2 h3,
 .news h3 {
   text-align: center;
   font-size: 15px;
 }
+
+/*homepage explore exhibition container*/
 
 .home-ex-container {
   display: flex;
@@ -328,8 +364,8 @@ ul {
 .big-exhibition,
 .big-explore,
 .title-events h1 {
-  color: var(--blue);
-  padding: 10px 20px 10px;
+  color: var(--black);
+  padding: 150px 20px 10px;
 }
 
 .exhibition,
@@ -408,14 +444,10 @@ ul {
 
 .explore-cta {
   margin: 20px auto;
-  color: var(--lightblue);
+  color: var(--black);
   font-size: 12px;
   padding: 20px 40px 10px 40px;
   text-decoration: none;
-}
-
-.explore-cta p {
-  color: var(--black);
 }
 
 /*exhibition spaces page*/
@@ -475,7 +507,9 @@ ul {
   background-size: cover;
   height: 800px;
   max-width: 100%;
+  margin: 0 auto 30px;
   padding-top: 100px;
+  box-shadow: var(--box-shadow);
 }
 
 .big-about-content,
@@ -490,11 +524,30 @@ ul {
   margin: 0 auto;
 }
 
-.big-about-map img,
-.about-map img {
-  object-fit: cover;
+.map-container {
+  margin: 30px auto;
+  background-color: var(--white);
+  height: 600px;
+  box-shadow: var(--box-shadow);
+  padding: 20px;
+  max-width: 300px;
+}
+
+.title-map {
+  color: var(--black);
+  font-size: 20px;
+  text-align: center;
+  padding-top: 20px;
+}
+/*Embeded Google map learned from: https://extension.umaine.edu/plugged-in/technology-marketing-communications/web/tips-for-web-managers/embed-map/ */
+.big-map,
+.map {
+  display: flex;
+  width: 500px;
+  height: 450px;
   max-width: 100%;
-  height: 500px;
+  border: 0px;
+  margin: 0 auto;
 }
 
 /*contact page*/
@@ -633,12 +686,6 @@ ul {
     background-position: 50%;
   }
 
-  .hero-content-small {
-    font-size: 15px;
-    margin: 0px auto;
-    padding-top: 70px;
-  }
-
   .explore img {
     object-position: top 0 right 30%;
   }
@@ -720,11 +767,16 @@ ul {
   /*about us*/
 
   .small-info-container {
-    margin-top: 50px;
+    margin: 50px auto;
+    width: 350px;
   }
 
   .small-location {
     margin-top: 20px;
+  }
+
+  .small-about-container {
+    width: 350px;
   }
 }
 
@@ -762,13 +814,22 @@ ul {
   }
 
   .hero-content-big {
-    height: 800px;
+    text-align: left;
     margin: 0 auto;
-    font-size: 20px;
   }
 
   .hero-content-big h2 {
-    margin-top: 200px;
+    margin-top: 180px;
+    font-size: 30px;
+  }
+
+  .hero-content-big h3 {
+    font-size: 18px;
+  }
+
+  .big-grey-container {
+    max-width: 800px;
+    margin: 40px auto;
   }
 
   .contact-info-container,
@@ -795,24 +856,28 @@ ul {
 
   .big-grid-container {
     display: grid;
-    grid-gap: 1em;
     grid-template-columns: auto auto;
-    max-width: 100%;
-    padding: 20px;
+    max-width: 900px;
     margin: 0 auto;
+    padding: 0px;
+  }
+
+  .big-internship-container {
+    height: 600px;
   }
 
   .big-home-ex-container {
     display: flex;
     flex-direction: row;
+    max-width: 950px;
+    margin: 0 auto;
   }
 
   .big-exhbition,
   .big-explore {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    max-width: 600px;
+    max-width: 100%;
     margin: 0 auto;
   }
 
@@ -820,6 +885,7 @@ ul {
   .big-exhibition img {
     display: flex;
     flex-direction: row;
+    box-shadow: var(--box-shadow);
   }
 
   .big-explore img {
@@ -909,9 +975,12 @@ ul {
   /*about us page*/
 
   .big-about-container {
-    margin-bottom: 50px;
     max-height: 700px;
     max-width: 100%;
+    padding: 20px;
+    margin: 0px auto 30px;
+    padding: 20px;
+    box-shadow: var(--box-shadow);
   }
 
   .big-about-content {
@@ -921,12 +990,12 @@ ul {
     height: 400px;
   }
 
-  .big-about-map img {
-    box-sizing: border-box;
-    margin: 0 auto;
-    height: 630px;
-    object-fit: cover;
-    width: 100%;
+  .big-map-container {
+    max-width: 860px;
+  }
+
+  .big-map {
+    width: 700px;
   }
 
   /*contact page*/
