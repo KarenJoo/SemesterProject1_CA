@@ -95,15 +95,26 @@ ul {
   background-position: bottom 80% right 0px;
 }
 
+.hero-content-big,
 .hero-content {
   display: flex;
   flex-direction: column;
-  text-align: center;
   color: var(--white);
+  background-color: rgba(0, 0, 0, 0.804);
+  padding: 10px;
 }
 
 .hero-content h2 {
-  margin-top: 200px;
+  font-size: 18px;
+  margin-top: 150px;
+  text-align: center;
+  padding: 20px 20px 0px 20px;
+}
+
+.hero-content h3 {
+  font-size: 14px;
+  margin-top: 0px;
+  text-align: center;
 }
 
 .big-grey-container,
@@ -425,7 +436,7 @@ ul {
 .explore-contact {
   text-align: center;
   padding: 10px;
-  background-color: var(--lightblue);
+  background-color: var(--white);
   box-shadow: var(--box-shadow);
   margin: 30px auto;
   max-width: 320px;
@@ -675,12 +686,6 @@ ul {
     background-position: 50%;
   }
 
-  .hero-content-small {
-    font-size: 15px;
-    margin: 0px auto;
-    padding-top: 70px;
-  }
-
   .explore img {
     object-position: top 0 right 30%;
   }
@@ -809,13 +814,17 @@ ul {
   }
 
   .hero-content-big {
-    height: 800px;
+    text-align: left;
     margin: 0 auto;
-    font-size: 20px;
   }
 
   .hero-content-big h2 {
-    margin-top: 200px;
+    margin-top: 180px;
+    font-size: 30px;
+  }
+
+  .hero-content-big h3 {
+    font-size: 18px;
   }
 
   .big-grey-container {
