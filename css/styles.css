@@ -326,7 +326,7 @@ ul {
 .internship-cta {
   display: flex;
   box-sizing: border-box;
-  margin-top: 90px;
+  margin-top: 110px;
 }
 
 .contact-cta:hover,
@@ -883,7 +883,7 @@ ul {
   .big-home-ex-container {
     display: flex;
     flex-direction: row;
-    max-width: 950px;
+    max-width: var(--max-width);
     margin: var(--margin);
   }
 
@@ -911,7 +911,7 @@ ul {
   .big-explore-container {
     display: flex;
     flex-direction: row;
-    max-width: 900px;
+    max-width: var(--max-width);
     margin: var(--margin);
   }
 
@@ -930,7 +930,7 @@ ul {
 
   .big-teachers img,
   .big-kids img {
-    height: 500px;
+    height: 700px;
   }
 
   .big-explore-contact {
@@ -1005,7 +1005,8 @@ ul {
   }
 
   .big-map-container {
-    max-width: 860px;
+    max-width: var(--max-width);
+    margin: 20px;
   }
 
   .big-map {
