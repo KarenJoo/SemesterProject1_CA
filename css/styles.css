@@ -547,14 +547,15 @@ ul {
 /*About us*/
 
 .big-about-container,
-#about-container {
+.about-container {
   background-image: url("../images/museum.webp");
   background-repeat: no-repeat;
+  background-position: top 20% right 20%;
   background-size: cover;
-  height: 800px;
+  height: 700px;
   max-width: 100%;
-  margin: 0 auto 30px;
-  padding-top: 100px;
+  margin: 0 30px;
+  padding-top: 20px;
   box-shadow: var(--box-shadow);
 }
 
@@ -792,10 +793,6 @@ ul {
   .small-location {
     margin-top: 20px;
   }
-
-  .small-about-container {
-    width: 350px;
-  }
 }
 
 /*DESKTOP*/
@@ -994,7 +991,7 @@ ul {
 
   .big-about-container {
     max-height: 700px;
-    max-width: 100%;
+    max-width: 750px;
     padding: 20px;
     margin: 0px auto 30px;
     padding: 20px;
