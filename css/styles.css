@@ -11,7 +11,7 @@
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
   --lightblue: #c3d5ff;
-  --blue: #3e67c5;
+  --blue: #6d95f3;
   --margin: 0 auto;
   --max-width: 100%;
 }
@@ -24,7 +24,6 @@
   margin: 10px auto 0px 120px;
   height: 80px;
   width: 130px;
-
 }
 
 body {
@@ -334,7 +333,7 @@ ul {
   font-size: 12px;
 }
 
-.cafe p,
+.cafe-container p,
 .grid-info p,
 .cafe-info p,
 .news2 p,
@@ -347,7 +346,7 @@ ul {
   background-color: var();
 }
 
-.cafe p {
+.cafe-container p {
   color: var(--lightblue);
   margin: 30px;
 }
@@ -358,7 +357,6 @@ ul {
   margin-top: 0px auto;
 }
 
-.cafe h3,
 .news2 h3,
 .news h3 {
   text-align: center;
