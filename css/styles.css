@@ -871,8 +871,8 @@ ul {
   .big-grid-container {
     display: grid;
     grid-template-columns: auto auto;
-    max-width: var(--max-width);
-    margin: 0 20px;
+    max-width: 1200px;
+    margin: var(--margin);
     padding: 0px;
   }
 
