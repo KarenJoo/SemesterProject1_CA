@@ -11,18 +11,19 @@
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
   --lightblue: #aac2f3;
-  --blue: #3d75f7;
+  --blue: #3e67c5;
   --margin: 0 auto;
   --max-width: 100%;
 }
-.big-logo,
-.small-logo {
-  background-image: url("/icons/LOGO.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
-  margin: 10px auto 0px 120px;
-  height: 80px;
-  width: 130px;
+
+.logo {
+  margin: 0 auto;
+}
+
+.big-logo img,
+.logo img {
+  height: 100px;
+  width: 100px;
 }
 
 body {
@@ -63,7 +64,7 @@ p {
 /*links in nav*/
 header a {
   text-decoration: none;
-  color: var(--lightblue);
+  color: var(--white);
   background: var(--black);
 }
 
@@ -805,8 +806,8 @@ ul {
     height: 10px;
   }
 
-  .big-logo {
-    margin: 10px;
+  .big-logo img {
+    margin: 0px 20px auto;
   }
 
   /*links*/
