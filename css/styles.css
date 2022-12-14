@@ -10,15 +10,14 @@
   --box-shadow: 5px 5px 10px #0000002c;
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
-  --lightblue: #c3d5ff;
-  --blue: #6d95f3;
+  --lightblue: #aac2f3;
+  --blue: #3d75f7;
   --margin: 0 auto;
   --max-width: 100%;
 }
 .big-logo,
-.small-logo,
-.logo {
-  background-image: url("../icons/LOGO.svg");
+.small-logo {
+  background-image: url("/icons/LOGO.svg");
   background-size: contain;
   background-repeat: no-repeat;
   margin: 10px auto 0px 120px;
@@ -246,7 +245,6 @@ ul {
   margin: 40px auto;
   font-size: 30px;
   justify-content: center;
-  color: var(--blue);
 }
 
 .internship-container h2,
