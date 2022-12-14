@@ -480,10 +480,10 @@ ul {
 
 .explore-cta {
   color: var(--blue);
-  font-size: 10px;
+  font-size: 9px;
   text-align: center;
-  padding: 0px 30px 30px;
-  width: 140px;
+  padding: 0px 30px 20px;
+  width: 130px;
   height: 15px;
   text-decoration: none;
   margin: 10px auto;
@@ -491,9 +491,9 @@ ul {
 
 .explore-cta:hover {
   color: var(--lightblue);
-  font-size: 9px;
+  font-size: 8px;
   width: 120px;
-  height: 12px;
+  height: 14px;
 }
 
 /*exhibition spaces page*/
