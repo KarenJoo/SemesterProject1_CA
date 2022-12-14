@@ -210,6 +210,27 @@ ul {
   background-color: var(--lightblue);
 }
 
+.news {
+  display: flex;
+  flex-direction: column;
+  max-height: 450px;
+  max-width: 100%;
+}
+
+.news-image {
+  background-image: url("../images/professora.webp");
+  background-size: cover;
+  background-position: right 30%;
+  display: flex;
+  flex-direction: column;
+  margin: 40px auto;
+  height: 15em;
+  width: 14em;
+  background-position: top 20% left 0%;
+  border-radius: 50%;
+  max-height: 400px;
+}
+
 .cafe-logo {
   background-image: url(../icons/cafe.svg);
   background-repeat: no-repeat;
@@ -234,19 +255,6 @@ ul {
 .internship-container h2,
 .news2-container h2 {
   color: var(--white);
-}
-
-.news-image {
-  background-image: url("../images/professora.webp");
-  background-size: cover;
-  background-position: right 30%;
-  display: flex;
-  flex-direction: column;
-  margin: 50px auto;
-  height: 16em;
-  width: 16em;
-  background-position: top 20% left 0%;
-  border-radius: 50%;
 }
 
 .internship-container,
@@ -415,29 +423,44 @@ ul {
 
 /*Explore page*/
 
-.explore-ex-container {
-  box-sizing: border-box;
-  max-width: 100%;
-  margin: 0px;
+.explore-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
+.big-kids,
+.big-teachers,
 .teachers,
 .kids {
+  display: flex;
+  flex-direction: column;
   background-color: var(--white);
-  padding: 30px;
+  padding: 10px;
   margin: 10px 10px auto;
-  height: 900px;
+  height: 850px;
   box-shadow: var(--box-shadow);
 }
 
-.teachers-image,
-.kids-image {
+.teachers-content,
+.kids-content {
   display: flex;
-  box-sizing: border-box;
-  margin: 0 auto;
-  max-height: 500px;
+  flex-direction: column;
+  height: 400px;
   max-width: 100%;
-  padding: 10px;
+}
+
+.teachers-content h2,
+.kids-content h2 {
+  text-align: center;
+}
+
+.teachers img,
+.kids img {
+  object-fit: cover;
+  max-width: 100%;
+  max-height: 550px;
 }
 
 .explore-contact {
@@ -445,8 +468,8 @@ ul {
   background-color: var(--white);
   box-shadow: var(--box-shadow);
   padding: 10px 30px 0px 0px;
-  max-width: 100%;
-  margin-top: 30px;
+  max-width: 420px;
+  margin: 20px auto;
   height: 200px;
 }
 
@@ -640,8 +663,8 @@ ul {
   color: var(--grey);
 }
 
-#contact-person {
-  margin: 0px auto 10px;
+#subject {
+  margin: 10px;
 }
 
 #message {
@@ -711,30 +734,6 @@ ul {
 
   .explore img {
     object-position: top 0 right 30%;
-  }
-
-  /*explore page*/
-  .small-explore-container {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  .small-teachers,
-  .small-kids {
-    display: flex;
-    flex-direction: column;
-    max-width: 450px;
-    margin: 20px auto;
-  }
-
-  .kids-content {
-    height: 380px;
-    max-width: 100%;
-  }
-
-  .teachers-content {
-    height: 300px;
-    max-width: 100%;
   }
 
   /*Exhibition spaces page*/
@@ -915,56 +914,43 @@ ul {
 
   .big-explore-container {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    max-width: 900px;
     margin: 0 auto;
-    width: 100%;
   }
 
   .big-kids,
   .big-teachers {
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     max-width: 100%;
+    max-height: 850px;
   }
 
   .big-kids-content,
   .big-teachers-content {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 500px;
+    height: 400px;
   }
 
-  .big-kids-content p {
-    margin-bottom: 30px;
-  }
-
-  .big-teachers-content p {
-    margin-bottom: 60px;
-  }
-
-  .big-kids img,
-  .big-teachers img {
-    max-width: 100%;
-    height: 600px;
+  .big-teachers img,
+  .big-kids img {
+    height: 500px;
   }
 
   .big-explore-contact {
-    max-width: 700px;
+    max-width: 650px;
   }
 
   .big-explore-cta {
-    width: 300px;
-    height: 70px;
-    font-size: 15px;
+    width: 230px;
+    height: 50px;
+    font-size: 12px;
   }
 
   .big-explore-cta:hover {
-    width: 270px;
-    height: 60px;
-    font-size: 14px;
+    width: 220px;
+    height: 45px;
+    font-size: 11px;
   }
 
   /*Exhibition spaces*/
