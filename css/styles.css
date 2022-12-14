@@ -10,7 +10,7 @@
   --box-shadow: 5px 5px 10px #0000002c;
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
-  --lightblue: #aac2f3;
+  --lightblue: #9dbaf4;
   --blue: #3e67c5;
   --margin: 0 auto;
   --max-width: 100%;
@@ -22,8 +22,8 @@
 
 .big-logo img,
 .logo img {
-  height: 100px;
-  width: 100px;
+  height: 120px;
+  width: 110px;
 }
 
 body {
@@ -64,7 +64,7 @@ p {
 /*links in nav*/
 header a {
   text-decoration: none;
-  color: var(--white);
+  color: var(--lightblue);
   background: var(--black);
 }
 
@@ -807,7 +807,8 @@ ul {
   }
 
   .big-logo img {
-    margin: 0px 20px auto;
+    margin: 0px 20px auto 20px;
+    height: 100px;
   }
 
   /*links*/
