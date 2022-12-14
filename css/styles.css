@@ -481,10 +481,10 @@ ul {
 .explore-cta {
   color: var(--blue);
   font-size: 9px;
-  text-align: center;
+  align-items: center;
   padding: 0px 30px 20px;
-  width: 130px;
-  height: 15px;
+  width: 150px;
+  height: 18px;
   text-decoration: none;
   margin: 10px auto;
 }
@@ -492,8 +492,8 @@ ul {
 .explore-cta:hover {
   color: var(--lightblue);
   font-size: 8px;
-  width: 120px;
-  height: 14px;
+  width: 130px;
+  height: 16px;
 }
 
 /*exhibition spaces page*/
@@ -547,14 +547,15 @@ ul {
 /*About us*/
 
 .big-about-container,
-#about-container {
+.about-container {
   background-image: url("../images/museum.webp");
   background-repeat: no-repeat;
+  background-position: top 20% right 20%;
   background-size: cover;
-  height: 800px;
+  height: 700px;
   max-width: 100%;
-  margin: 0 auto 30px;
-  padding-top: 100px;
+  margin: 0 30px;
+  padding-top: 20px;
   box-shadow: var(--box-shadow);
 }
 
@@ -792,10 +793,6 @@ ul {
   .small-location {
     margin-top: 20px;
   }
-
-  .small-about-container {
-    width: 350px;
-  }
 }
 
 /*DESKTOP*/
@@ -994,7 +991,7 @@ ul {
 
   .big-about-container {
     max-height: 700px;
-    max-width: 100%;
+    max-width: 750px;
     padding: 20px;
     margin: 0px auto 30px;
     padding: 20px;
