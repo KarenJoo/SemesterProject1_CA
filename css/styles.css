@@ -10,7 +10,7 @@
   --box-shadow: 5px 5px 10px #0000002c;
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
-  --lightblue: #738dcb;
+  --lightblue: #c3d5ff;
   --blue: #3e67c5;
   --margin: 0 auto;
   --max-width: 100%;
@@ -621,7 +621,7 @@ ul {
 }
 
 .admission-container,
-.form-container {
+#form-container {
   box-sizing: border-box;
   padding: 40px;
   background-color: rgba(255, 255, 255, 0.609);
