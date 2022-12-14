@@ -11,83 +11,101 @@
     <title>Community Science Museum | Contact</title>
   </head>
   <body class="contact-body">
-    <header id="#header-container">        
-      <input type="checkbox" id="menu-checkbox"/>
-      <label for="menu-checkbox" alt="menu checkbox">   
-        <div class="burger-icon">
-          <img src="../icons/burgermenu.svg" alt="burgermenu icon">
-        </div>
-      </div>  
-      </label>       
+    <header id="#header-container">
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox" class="burger-icon">
+        <img src="../icons/burgermenu.svg" alt="burgermenu icon" />
+      </label>
       <a class="logo small-logo big-logo" href="/index.html"></a>
-      <nav class="nav-small">   
-        <ul>
-          <a href="explore.html">EXPLORE</a>
-          <a href="exhibition-spaces.html">EXHIBITION SPACES</a>
-          <a href="about-us.html">ABOUT US</a>
-          <a href="contact.html" class="active">CONTACT</a>
-        </ul>
+      <nav class="nav-small">
+        <a href="explore.html">EXPLORE</a>
+        <a href="exhibition-spaces.html">EXHIBITION SPACES</a>
+        <a href="about-us.html">ABOUT US</a>
+        <a href="contact.html" class="active">CONTACT</a>
       </nav>
     </header>
     <main>
       <section class="title-events contact-title">
         <h1>CONTACT</h1>
       </section>
-    <div id="contact-container">
-        <section class="info-container contact-info-container"> 
+      <div id="contact-container">
+        <section class="info-container contact-info-container">
           <div class="phone">
-            <img src="../icons/phone.svg" alt="phone icon">
-             <p>(+47) 999 999 99</p>        
+            <img src="../icons/phone.svg" alt="phone icon" />
+            <p>(+47) 999 999 99</p>
           </div>
           <div class="location">
-            <img src="../icons/location.svg" alt="location icon">
+            <img src="../icons/location.svg" alt="location icon" />
             <p>Havnegata 12</p>
-            <p>7010 Trondheim</p>   
+            <p>7010 Trondheim</p>
           </div>
           <div class="mail">
-            <img src="../icons/mail.svg" alt="ticket icon">
-            <p>support@science.museum.com</p>    
+            <img src="../icons/mail.svg" alt="ticket icon" />
+            <p>support@science.museum.com</p>
           </div>
         </section>
         <div class="contact-flex-container">
-        <section class="admission-container big-admission">
-          <h2>Admission</h2>
-          <p>The entrance is free for all.</p>
-          <h3>Guided Tours</h3>
-          <p>There are guided tours of the museum that leave every hour. These tours are 70 NOK per person.</p>
-          <p>If you would like to organise a guided tour for your group of 6 or more people, please contact us to arrange the tour.</p>
-        </section>
-      <section class="form-container">        
-        <h2>Send us a message</h2>
-  <form action="form-success.php" method="POST">
-    <label for="name">Your name</label>
-    <input type="text" name="name" id="name" class="form_input" required>
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" class="form_input" required>
-    <label for="subject">Subject</label>
-    <select name="subject" id="subject">
-      <option value="select">select </option>      
-      <option value="Tickets/prices">Tickets/prices</option>
-      <option value="Explore">Explore</option>
-      <option value="Exhibition Spaces">Exhibition Spaces</option>
-      <option value="Night at the museum">Night at the museum</option>
-      <option value="Internship">Internship</option>
-      <option value="Café Muse">Café Muse</option>
-      <option value="Guiding">Guiding</option>
-      <option value="other">other</option>
-      </select>
-    <textarea id="message" name="message" rows="10" cols="50"></textarea>
-    <input type="submit"/> 
-  </form> 
-</section>
+          <section class="admission-container big-admission">
+            <h2>Admission</h2>
+            <p>The entrance is free for all.</p>
+            <h3>Guided Tours</h3>
+            <p>
+              There are guided tours of the museum that leave every hour. These
+              tours are 70 NOK per person.
+            </p>
+            <p>
+              If you would like to organise a guided tour for your group of 6 or
+              more people, please contact us to arrange the tour.
+            </p>
+          </section>
+          <section class="form-container">
+            <h2>Send us a message</h2>
+            <form action="form-success.php" method="POST">
+              <label for="name">Your name</label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                class="form_input"
+                required
+              />
+              <label for="email">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                class="form_input"
+                required
+              />
+              <label for="subject">Subject</label>
+              <select name="subject" id="subject">
+                <option value="select">select</option>
+                <option value="Tickets/prices">Tickets/prices</option>
+                <option value="Explore">Explore</option>
+                <option value="Exhibition Spaces">Exhibition Spaces</option>
+                <option value="Night at the museum">Night at the museum</option>
+                <option value="Internship">Internship</option>
+                <option value="Café Muse">Café Muse</option>
+                <option value="Guiding">Guiding</option>
+                <option value="other">other</option>
+              </select>
+              <textarea
+                id="message"
+                name="message"
+                rows="10"
+                cols="50"
+              ></textarea>
+              <input type="submit" />
+            </form>
+          </section>
+        </div>
       </div>
-    </div>
     </main>
     <footer id="main-footer">
       <h3>COMMUNITY SCIENCE MUSEUM</h3>
-        <p>Havnegata 12, 7010 Trondheim</p>
-        <p>support@science.museum.com</p>
-        <p>(+47) 999 999 99</p>
+      <p>Havnegata 12, 7010 Trondheim</p>
+      <p>support@science.museum.com</p>
+      <p>(+47) 999 999 99</p>
       <h3>&copy; Copyright 2022</h3>
     </footer>
   </body>
