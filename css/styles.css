@@ -6,9 +6,6 @@
 /*Box-shadow effect with blur learned from: https://www.w3schools.com/cssref/css3_pr_box-shadow.php */
 
 :root {
-  --red: #ac441d;
-  --beige: #e3d3b3;
-  --grey: #333538;
   --black: #000;
   --box-shadow: 5px 5px 10px #0000002c;
   --offwhite: rgb(230, 229, 229);
