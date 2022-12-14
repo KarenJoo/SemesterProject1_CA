@@ -944,13 +944,13 @@ ul {
   .big-explore-cta {
     width: 230px;
     height: 50px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .big-explore-cta:hover {
     width: 220px;
     height: 45px;
-    font-size: 11px;
+    font-size: 9px;
   }
 
   /*Exhibition spaces*/
