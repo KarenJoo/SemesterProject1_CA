@@ -10,8 +10,8 @@
   --box-shadow: 5px 5px 10px #0000002c;
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
-  --lightblue: #9dbaf4;
-  --blue: #3e67c5;
+  --lightblue: #a9c3f7;
+  --blue: #375eb9;
   --margin: 0 auto;
   --max-width: 100%;
 }
@@ -206,7 +206,8 @@ ul {
 }
 
 .news-container {
-  background-color: var(--lightblue);
+  background-image: url("../images/space.webp");
+  background-size: cover;
 }
 
 .news {
@@ -214,6 +215,8 @@ ul {
   flex-direction: column;
   max-height: 450px;
   max-width: var(--max-width);
+  background-color: rgba(255, 255, 255, 0.621);
+  padding: 0px 20px;
 }
 
 .news-image {
@@ -246,11 +249,12 @@ ul {
   margin: 40px auto;
   font-size: 30px;
   justify-content: center;
+  color: var(--white);
 }
 
-.internship-container h2,
-.news2-container h2 {
-  color: var(--white);
+.internship-container h2 {
+  color: var(--blue);
+  padding: 40px;
 }
 
 .internship-container,
@@ -269,6 +273,11 @@ ul {
   height: 500px;
 }
 
+.news p {
+  padding: 10px;
+  color: var(--black);
+}
+
 .news2 {
   background-color: var(--white);
   color: var(--black);
@@ -276,13 +285,18 @@ ul {
   margin: var(--margin);
 }
 
+.internship h2 {
+  margin: 0px;
+}
+
 .internship {
   display: flex;
   flex-direction: column;
-  padding: 10px;
-  height: 200px;
-  max-width: var(--max-width);
-  background-color: var(--white);
+  height: 300px;
+  padding: 0px 20px 10px;
+  margin: 20px;
+  background-color: rgba(255, 255, 255, 0.692);
+  color: var(--black);
 }
 
 .grid-info {
@@ -323,7 +337,7 @@ ul {
 .internship-cta {
   display: flex;
   box-sizing: border-box;
-  margin-top: 110px;
+  margin-top: 100px;
 }
 
 .contact-cta:hover,
