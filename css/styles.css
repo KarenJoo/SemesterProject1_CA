@@ -899,7 +899,7 @@ ul {
   .big-home-ex-container {
     display: flex;
     flex-direction: row;
-    max-width: var(--max-width);
+    max-width: 1220px;
     margin: var(--margin);
   }
 
