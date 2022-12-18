@@ -11,7 +11,6 @@
   --offwhite: rgb(230, 229, 229);
   --white: #fff;
   --lightblue: #a9c3f7;
-  --blue: #375eb9;
   --margin: 0 auto;
   --max-width: 100%;
 }
@@ -68,7 +67,7 @@ header a {
 }
 
 nav a:hover {
-  color: var(--blue);
+  color: var(--white);
   transition: 0.3s;
 }
 
@@ -79,7 +78,7 @@ ul {
 }
 
 .active {
-  color: var(--blue);
+  color: var(--white);
 }
 
 /*home page*/
@@ -200,7 +199,6 @@ ul {
   margin: var(--margin);
   height: 600px;
   box-shadow: var(--box-shadow);
-  color: var(--black);
   margin-top: 20px;
 }
 
@@ -252,7 +250,7 @@ ul {
 }
 
 .internship-container h2 {
-  color: var(--blue);
+  color: var(--black);
   padding: 20px 0px;
 }
 
@@ -274,12 +272,10 @@ ul {
 
 .news p {
   padding: 10px;
-  color: var(--black);
 }
 
 .news2 {
   background-color: var(--white);
-  color: var(--black);
   padding: 20px;
   margin: var(--margin);
 }
@@ -295,12 +291,10 @@ ul {
   padding: 0px 20px 10px;
   margin: 40px auto;
   background-color: rgba(255, 255, 255, 0.692);
-  color: var(--black);
 }
 
 .grid-info {
   background-color: rgba(255, 255, 255, 0.753);
-  color: var(--black);
   margin: 10px auto 10px;
   width: 260px;
   padding: 0px 20px 10px 0px;
@@ -370,7 +364,7 @@ ul {
   margin-top: 0px auto;
 }
 
-.cafe-info h3{
+.cafe-info h3 {
   font-sze: 12px;
   color: var(--lightblue);
   text-align: center;
@@ -498,7 +492,7 @@ ul {
 }
 
 .explore-cta {
-  color: var(--blue);
+  color: var(--black);
   font-size: 9px;
   align-items: center;
   padding: 0px 30px 20px;
@@ -528,7 +522,7 @@ ul {
 
 .ex-cta-small,
 .exhibition-cta {
-  color: var(--blue);
+  color: var(--black);
   font-size: 12px;
   text-decoration: none;
   border-style: solid;
@@ -549,7 +543,7 @@ ul {
 #cosmology h2 {
   box-sizing: border-box;
   font-size: 25px;
-  color: var(--blue);
+  color: var(--black);
   max-width: var(--max-width);
   margin: var(--margin);
 }
@@ -601,7 +595,6 @@ ul {
 }
 
 .title-map {
-  color: var(--black);
   font-size: 20px;
   text-align: center;
   padding-top: 20px;
@@ -655,7 +648,6 @@ ul {
   justify-content: center;
   margin: 0px auto;
   padding-bottom: 30px;
-  color: var(--blue);
 }
 
 .admission-container h3 {
@@ -875,6 +867,7 @@ ul {
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
+    font-size: 12px;
     margin: 0 auto 20px;
     max-width: 700px;
     max-height: 400px;
