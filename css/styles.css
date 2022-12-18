@@ -49,7 +49,6 @@ header {
 }
 
 h1 {
-  font-size: 40px;
   color: var(--black);
   margin: 0px;
   padding-top: 30px;
@@ -70,6 +69,7 @@ header a {
 
 nav a:hover {
   color: var(--blue);
+  transition: 0.3s;
 }
 
 ul {
@@ -125,7 +125,6 @@ ul {
   display: flex;
   flex-direction: column;
   text-align: center;
-  max-width: var(--max-width);
   padding: 0px 50px 50px;
   margin: 40px 0px 40px;
   box-shadow: var(--box-shadow);
@@ -344,6 +343,7 @@ ul {
 .internship-cta:hover {
   color: var(--lightblue);
   font-size: 12px;
+  transition: 0.3s;
 }
 
 .cafe-container p,
@@ -368,6 +368,12 @@ ul {
 .grid-info p {
   text-align: center;
   margin-top: 0px auto;
+}
+
+.cafe-info h3{
+  font-sze: 12px;
+  color: var(--lightblue);
+  text-align: center;
 }
 
 .news2 h3,
@@ -507,6 +513,7 @@ ul {
   font-size: 8px;
   width: 130px;
   height: 16px;
+  transition: 0.3s;
 }
 
 /*exhibition spaces page*/
@@ -757,6 +764,7 @@ ul {
   .ex-cta-small:hover {
     color: var(--lightblue);
     font-size: 8px;
+    transition: 0.3s;
   }
 
   .ex-container {
@@ -964,6 +972,7 @@ ul {
     width: 220px;
     height: 45px;
     font-size: 9px;
+    transition: 0.3s;
   }
 
   /*Exhibition spaces*/
