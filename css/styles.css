@@ -365,7 +365,7 @@ ul {
 }
 
 .cafe-info h3 {
-  font-sze: 12px;
+  font-size: 12px;
   color: var(--lightblue);
   text-align: center;
 }
@@ -384,8 +384,8 @@ ul {
   max-width: var(--max-width);
 }
 
-.explore h1,
-.exhibition h1,
+.explore h2,
+.exhibition h2,
 .big-exhibition,
 .big-explore,
 .title-events h1 {
@@ -393,19 +393,21 @@ ul {
   font-size: 30px;
 }
 
-.big-title-events h1,
-.title-events h1 {
-  padding-top: 120px;
-  padding-bottom: 20px;
-  font-size: 40px;
-  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.482);
+.explore h2,
+.big-explore h2,
+.exhibition h2,
+.big-exhibition h2 {
+  text-align: center;
 }
 
-.exhibition,
-.explore {
-  max-width: var(--max-width);
-  margin: var(--margin);
-  padding: 0px;
+.big-title-events h1,
+.title-events h2,
+.explore,
+.exhibition {
+  padding-top: 110px;
+  padding-bottom: 10px;
+  font-size: 40px;
+  text-shadow: 2px 5px 10px rgba(0, 0, 0, 0.482);
 }
 
 /*intern link on a img tag learned from: https://stackoverflow.com/questions/22962704/simple-img-link-issue*/
@@ -430,7 +432,7 @@ ul {
   margin-top: 30px;
 }
 
-#main-footer h1 {
+#main-footer h2 {
   padding-top: 20px;
   font-size: 15px;
   color: var(--white);
