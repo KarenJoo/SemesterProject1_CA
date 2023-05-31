@@ -1,26 +1,67 @@
-Homepage for the Community Science Museum
-website for the Semester project 1 course FED AUG22
+<img width="769" alt="Screenshot 2023-05-31 at 14 46 42" src="https://github.com/KarenJoo/Rainydays_website_CA/assets/114563762/c29f6522-30e5-4ef4-aea7-6f28408745e5">
 
+# "Science Museum"
 
 ## Description
-This is the website for the fictive business Community Science Museum.
 
-### Dependencies
+This is the Semester Project 1 Course Assignment.
 
-*Firefox 106.0.3, Safari 12.1.2.
-* tested and should be responsive to devices: Mac OS 12.6 Monterey, up to 32" screens, iphone and android devices, ipad  
-*Media queries for mobile > min screen width 300px and max width 600px
-*Media queries for desktop > min width 600px and max width 1807px
+**Course Assignment:** 
+*An interactive science museum called the Community Science Museum is opening in your town/city. Its core target audience is primary and middle school children (ages 7-15) and families with young children. The museum wants an informative, appealing website to attract middle school pupils and their parents. The website should be informative and engaging, responsive and easy to use on various devices.*
+
+
+### This website contains of:
+
+- Homepage
+- Explore page
+- Exhibition Spaces page
+- About
+- Contact
+
+### Built With
+
+- HTML
+- CSS
+- JavaScript
+
+## Getting Started
+
+### Installing
+
+1. Clone the repo:
+
+```bash
+git clone git@github.com:KarenJoo/Rainydaus_website_CA
+```
+
+2. Install the dependencies:
+
+```
+npm install
+```
+
+### Running
+
+To run the app, run the following commands:
+
+```bash
+npm run start
+```
+
+## Contributing
+
+Here you can detail any information you want to provide regarding contributing to the project. For big projects you will usually have a separate `CONTRIBUTING.md` and link to it, but for smaller projects you can simply include instructions here. These instructions can simply detail the process you want a person to take, such as to make sure to open a pull request so code can be reviewed.
+
 
 
 ### Executing program
 
-- Netlify: https://dashing-sundae-a1e78a.netlify.app
+- Netlify: [https://dashing-sundae-a1e78a.netlify.app](https://com-science-museum.netlify.app/)
 - GitHub repo: https://github.com/KarenJoo/SemesterProject1_CA.git
 - Figma prototype desktop version: https://www.figma.com/file/WBAUuciUrCaGsT4FKFVZgU/Untitled?node-id=31%3A360&t=pq1EpF9lZmujo3DN-1![bilde](https://user-images.githubusercontent.com/114563762/208299417-c69565bd-732f-4b72-afe4-75fde9431ad2.png) 
 - Figma prototype mobile version:
 https://www.figma.com/file/WBAUuciUrCaGsT4FKFVZgU/Untitled?node-id=0%3A1&t=pq1EpF9lZmujo3DN-1![bilde](https://user-images.githubusercontent.com/114563762/208299426-bcd8c4d2-ca62-4030-a240-e51304579cfc.png)
  
 ## Authors
-Karen Jo Fiksdahl
+**Karen Jo**
 mail: KarFik31658@stud.noroff.no
